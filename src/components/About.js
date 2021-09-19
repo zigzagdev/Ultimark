@@ -9,8 +9,9 @@ const style = {
 
 const About = () => {
     return (
-        <button style={style}>Welcome to our website!</button>
+      <div>
+       <h1 style={style}>Temporary Success !! </h1>
+      </div>
     );
-};
-
-export default About
+ }
+export default About;
