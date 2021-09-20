@@ -1,9 +1,8 @@
 import React,{Component} from "react";
 import About from "./components/About";
-import Home from "./components/Home";
-import Path from "./components/Path";
 import {Link, Route,BrowserRouter,Switch} from "react-router-dom";
-import {Button, Grid} from "@mui/material";
+import {Button, Card, Grid} from "@mui/material";
+import Footer from "./components/Footer";
 
 
 class App extends Component{
@@ -12,13 +11,14 @@ class App extends Component{
         <BrowserRouter>
           <div>
             <Grid item xs={1} md={3} lg={6}>
-             <Grid>
+             <Card>
               <Link to='/about'>About</Link>
-             </Grid>
+             </Card>
              <Grid>
                 <Link to='/home'>Home</Link>
              </Grid>
             </Grid>
+            <Footer/>
           </div>
 
             <Switch>
@@ -31,6 +31,9 @@ class App extends Component{
                         to="/Home">
                     Test in Grid React
                 </Button>
+                </Route>
+                <Route>
+                   <Footer/>
                 </Route>
             </Switch>
         </BrowserRouter>
