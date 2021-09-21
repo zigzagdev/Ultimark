@@ -3,6 +3,7 @@ import About from "./components/About";
 import {Link, Route,BrowserRouter,Switch} from "react-router-dom";
 import {Button, Card, Grid} from "@mui/material";
 import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 
 class App extends Component{
@@ -10,6 +11,7 @@ class App extends Component{
       return(
         <BrowserRouter>
           <div>
+            <Header/>
             <Grid item xs={1} md={3} lg={6}>
              <Card>
               <Link to='/about'>About</Link>
@@ -22,6 +24,9 @@ class App extends Component{
           </div>
 
             <Switch>
+                <Route>
+                  <Header/>
+                </Route>
                 <Route path='/about'>
                     <About />
                 </Route>
