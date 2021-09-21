@@ -24,9 +24,6 @@ class App extends Component{
           </div>
 
             <Switch>
-                <Route>
-                  <Header/>
-                </Route>
                 <Route path='/about'>
                     <About />
                 </Route>

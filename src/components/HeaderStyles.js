@@ -9,14 +9,8 @@ export const Box = styled.div`
   height: 90px;
 `;
 
-export const HeaderLink = styled.a`
-color: #fff;
-margin-bottom: 20px;
-font-size: 18px;
-text-decoration: none;
-
-&:hover {
-	color: green;
-	transition: 200ms ease-in;
-}
+export const HeaderLink = styled.div`
+  color:blue;
+  display: flex;
+  flex-direction: row-reverse;
 `;

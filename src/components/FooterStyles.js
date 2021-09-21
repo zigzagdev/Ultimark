@@ -30,24 +30,22 @@ export const Row = styled.div`
   grid-template-columns: repeat(auto-fill,
   minmax(185px, 1fr));
   grid-gap: 20px;
-
+  margin-bottom: 20px;
 `;
 
 export const FooterLink = styled.a`
 color: #fff;
 margin-bottom: 20px;
-font-size: 18px;
+font-size: 14px;
 text-decoration: none;
-
-&:hover {
-	color: green;
-	transition: 200ms ease-in;
-}
+text-align: right;
+margin-right:20px;  
 `;
 
 export const Heading = styled.p`
-font-size: 24px;
+font-size: 19px;
 color: #fff;
-margin-bottom: 40px;
+margin-bottom: 20px;
 font-weight: bold;
+text-align: right;
 `;
