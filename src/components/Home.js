@@ -18,11 +18,13 @@ class Home extends Component {
     }
 
     render() {
-        return <div>
+        return(
+        <div>
             <h1>React</h1>
             <p style={style}>{this.title}</p>
             <p>{this.message}</p>
-        </div>;
+        </div>
+    );
     }
 }
 export default Home ;

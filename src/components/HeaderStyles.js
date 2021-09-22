@@ -7,10 +7,12 @@ export const Box = styled.div`
   top:  0;
   width: 100%;
   height: 90px;
-`;
-
-export const HeaderLink = styled.div`
-  color:blue;
   display: flex;
   flex-direction: row-reverse;
+`;
+
+export const HeaderLink = styled.a`
+  color:blue;
+  margin-right: 64px;
+  margin-top: 30px;
 `;
