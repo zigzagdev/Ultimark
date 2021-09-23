@@ -30,13 +30,6 @@ class App extends Component{
                     <About />
                 </Route>
                 <Route>
-                <Button color="primary"
-                        component={Link}
-                        to="/Home">
-                    Test in Grid React
-                </Button>
-                </Route>
-                <Route>
                    <Footer/>
                 </Route>
             </Switch>
