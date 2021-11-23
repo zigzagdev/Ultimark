@@ -21,7 +21,6 @@ const Header = () => {
             </Logo>
             <HeaderLinkWrapper>
                 <HeaderLink href="/">Menu</HeaderLink>
-                <HeaderLink href="#">Instagram</HeaderLink>
                 <HeaderLink href="#">Information</HeaderLink>
             </HeaderLinkWrapper>
         </Wrapper>
