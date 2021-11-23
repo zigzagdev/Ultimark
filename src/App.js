@@ -4,6 +4,7 @@ import {Link, Route,BrowserRouter,Switch} from "react-router-dom";
 import {Button, Grid} from "@mui/material";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Card from "./components/Card";
 
 
 class App extends Component{
@@ -22,6 +23,7 @@ class App extends Component{
                      Home
                </Button>
              </Grid>
+               <Link to='/Card'>Card</Link>
             <Footer/>
           </div>
 
@@ -37,7 +39,7 @@ class App extends Component{
                 </Button>
                 </Route>
                 <Route>
-                   <Footer/>
+                   <Card/>
                 </Route>
             </Switch>
         </BrowserRouter>
