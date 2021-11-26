@@ -5,7 +5,7 @@ import {Button, Grid} from "@mui/material";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Card from "./components/Card";
-
+import styles from  './App.css';
 
 class App extends Component{
     render() {
@@ -13,35 +13,17 @@ class App extends Component{
         <BrowserRouter>
           <div>
             <Header/>
-             <Grid>
-              <Link to='/about'>About</Link>
-             </Grid>
-             <Grid>
-               <Button color="primary"
-                       component={Link}
-                       to="/Home">
-                     Home
-               </Button>
-             </Grid>
-               <Link to='/Card'>Card</Link>
+            <Button component={Link} to="/About">
+              About
+            </Button>
+            <Button component={Link} to="/Home">
+              Home
+            </Button>
+            <Link to="/Card">
+              Card
+            </Link>
             <Footer/>
           </div>
-
-            <Switch>
-                <Route path='/about'>
-                    <About />
-                </Route>
-                <Route>
-                <Button color="primary"
-                        component={Link}
-                        to="/Home">
-                    Test in Grid React
-                </Button>
-                </Route>
-                <Route>
-                   <Card/>
-                </Route>
-            </Switch>
         </BrowserRouter>
       )
     }
