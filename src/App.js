@@ -20,7 +20,7 @@ class App extends Component{
               Home
             </Button>
             <Link to="/Card">
-                Card
+              Card    
             </Link>
             <Footer/>
           </div>
