@@ -2,14 +2,13 @@ import logo from '../logo.svg';
 import React from "react";
 
 const style = {
-    backgroundColor:"black",
     position: "absolute",
     bottom: 0,
     width: "100%",
 }
 
 const chrct = {
-    color: "white",
+    color: "black",
     textAlign: "right",
     paddingRight: "40px",
 }
