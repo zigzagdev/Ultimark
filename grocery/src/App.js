@@ -6,15 +6,17 @@ import  Footer from  './layouts/footer'
 
 function App() {
   return (
-    <div>
-      <header className="App-header">
+    <body>
+      <div className="Wrapper">
+        <header className="App-header">
           aaaaaaaa
-      </header>
-      <main>
+        </header>
+        <main>
           Learn React
-      </main>
-      <Footer/>
-    </div>
+        </main>
+        <Footer/>
+      </div>
+    </body>
   );
 }
 
