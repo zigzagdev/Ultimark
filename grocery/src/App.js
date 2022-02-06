@@ -1,16 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
 import  Footer from  './layouts/footer'
-
+import  Header from './layouts/header'
 
 
 function App() {
   return (
     <body>
       <div className="Wrapper">
-        <header className="App-header">
-          aaaaaaaa
-        </header>
+        <Header/>
         <main>
           Learn React
         </main>
