@@ -1,8 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import  Footer from  './layouts/footer'
+import  Footer from  './layouts/footer.tsx'
 import  Header from './layouts/header'
 import  DarkMode from  './layouts/DarkMode.tsx'
+import  Main from './layouts/main'
+
 
 
 function App() {
@@ -10,9 +12,7 @@ function App() {
     <body>
       <div className="Wrapper">
         <Header/>
-        <main>
-          Learn React
-        </main>
+        <Main/>
         <Footer/>
       </div>
     </body>

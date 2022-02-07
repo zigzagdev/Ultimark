@@ -1,13 +1,10 @@
 import "../App.css";
 import { ChangeEventHandler } from "react";
 
-// 1
 const setDark = () => {
 
-    // 2
     localStorage.setItem("theme", "dark");
 
-    // 3
     document.documentElement.setAttribute("data-theme", "dark");
 };
 
@@ -16,21 +13,16 @@ const setLight = () => {
     document.documentElement.setAttribute("data-theme", "light");
 };
 
-// 4
 const storedTheme = localStorage.getItem("theme");
 
-const prefersDark =
-    window.matchMedia &&
-    window.matchMedia("(prefers-color-scheme: dark)").matches;
+const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-const defaultDark =
-    storedTheme === "dark" || (storedTheme === null && prefersDark);
+const defaultDark = storedTheme === "dark" || (storedTheme === null && prefersDark);
 
 if (defaultDark) {
     setDark();
 }
 
-// 5
 const toggleTheme: ChangeEventHandler<HTMLInputElement> = (e) => {
     if (e.target.checked) {
         setDark();
@@ -41,22 +33,15 @@ const toggleTheme: ChangeEventHandler<HTMLInputElement> = (e) => {
 
 const DarkMode = () => {
     return (
-        <div className="toggle-theme-wrapper">
+          <div className="toggle-theme-wrapper">
             <span>☀️</span>
-    <label className="toggle-theme" htmlFor="checkbox">
-    <input
-        type="checkbox"
-    id="checkbox"
-
-    // 6
-    onChange={toggleTheme}
-    defaultChecked={defaultDark}
-    />
-    <div className="slider round"></div>
-        </label>
-        <span>🌒</span>
-    </div>
-);
+              <label className="toggle-theme" htmlFor="checkbox">
+                <input type="checkbox" id="checkbox" onChange={toggleTheme} defaultChecked={defaultDark}/>
+                <div className="slider round"></div>
+              </label>
+              <span>🌒</span>
+          </div>
+  );
 };
 
 export default DarkMode;
