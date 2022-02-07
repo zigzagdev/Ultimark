@@ -5,8 +5,8 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - ./:/src
-    command: sh -c "cd app && PORT=5001 yarn start"
+      - ./:/usr/src/app
+    command: sh -c "cd grocery && yarn start"
     ports:
-      - "3001:3001"
+      - "5001:5001"
     stdin_open: true
