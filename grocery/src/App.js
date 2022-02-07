@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import  Footer from  './layouts/footer.tsx'
 import  Header from './layouts/header'

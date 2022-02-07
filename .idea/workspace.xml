@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93696015-5a00-496a-b35b-57c37d401d50" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grocery/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/grocery/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grocery/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/grocery/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grocery/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grocery/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grocery/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/grocery/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grocery/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/grocery/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grocery/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grocery/src/layouts/TestDarkMode.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grocery/src/layouts/footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/grocery/src/layouts/footer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grocery/src/layouts/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/grocery/src/layouts/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grocery/src/logo.svg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,6 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -42,6 +55,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -52,7 +66,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1644119295097</updated>
-      <workItem from="1644119302927" duration="6929000" />
+      <workItem from="1644119302927" duration="14512000" />
     </task>
     <servers />
   </component>

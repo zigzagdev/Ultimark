@@ -1,17 +1,17 @@
-import React from "react";
+import React from 'react';
 
-const style = {
+const style: { [key: string]: string } = {
     position: "absolute",
-    bottom: 0,
+    bottom: '0',
     width: "100%",
     backgroundColor: "black",
-}
+};
 
-const chrct = {
+const chrct: { [key: string]: string } = {
     color: "white",
     textAlign: "right",
     paddingRight: "50px",
-}
+};
 
 class Footer extends React.Component {
     render() {
