@@ -1,8 +1,6 @@
 import React from "react";
+import '../App.css';
 
-const main = {
-    backgroundColor: "black",
-}
 const character = {
     backgroundColor: "white",
 }
@@ -10,7 +8,8 @@ const character = {
 class Main extends React.Component {
     render() {
         return (
-            <div style={main}>aaaaaa
+            <div className= "main">
+
             </div>
         );
     }

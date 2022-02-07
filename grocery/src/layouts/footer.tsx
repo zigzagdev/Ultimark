@@ -8,9 +8,9 @@ const style = {
 }
 
 const chrct = {
-    color: "black",
+    color: "white",
     textAlign: "right",
-    paddingRight: "40px",
+    paddingRight: "50px",
 }
 
 class Footer extends React.Component {

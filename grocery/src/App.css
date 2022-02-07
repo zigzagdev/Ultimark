@@ -1,4 +1,4 @@
-.App {
+.Wrapper {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -105,4 +105,8 @@ input:checked + .slider {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.main {
+  background-color: black;
 }
