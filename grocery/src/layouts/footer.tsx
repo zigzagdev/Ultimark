@@ -1,21 +1,29 @@
 import React, {Fragment} from 'react';
 
 const style: { [key: string]: string } = {
-    position: "absolute",
-    bottom: '0',
+    marginTop: "auto",
     width: "100%",
     backgroundColor: "black",
 };
 
 const rightchrt: { [key: string]: string } = {
     color: "white",
-    textAlign: "right",
-    paddingRight: "50px",
+    textAlign: "center",
+    paddingLeft: "60px",
 };
 
-const  rightplace:  {[key: string]: string} = {
+const place:  {[key: string]: string} = {
     display:"inline-block",
-    padding:  "20px"
+    padding:  "20px 90px 20px ",
+    verticalAlign: "top",
+}
+
+const innerleft:  {[key: string]: string} = {
+    display: "block",
+}
+
+const right1:  {[key: string]: string} = {
+    color: "white",
 }
 
 
@@ -26,14 +34,18 @@ class Footer extends React.Component {
       return (
           <Fragment>
             <div style={style}>
-              <div style={rightplace}>
-                <p style={rightchrt}>Matthew - Masa</p>
+              <div style={place}>
+                  <p style={right1}>change1</p>
+                  <p style={right1}>change2</p>
+                  <p style={right1}>change3</p>
               </div>
-              <div style={rightplace}>
-                <p style={rightchrt}>Matthew - Masa</p>
+              <div style={place}>
+                <div style={style}>
+                <div style={rightchrt}>©Matthew - Masa</div>
+                </div>
               </div>
-              <div style={rightplace}>
-                <p style={rightchrt}>Matthew - Masa</p>
+              <div style={place}>
+                <div style={rightchrt}>©Matthew - Masa</div>
               </div>
             </div>
           </Fragment>
