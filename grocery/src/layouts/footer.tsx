@@ -14,7 +14,7 @@ const rightchrt: { [key: string]: string } = {
 
 const place:  {[key: string]: string} = {
     display:"inline-block",
-    padding:  "20px 90px 20px ",
+    padding:  "20px 130px 20px ",
     verticalAlign: "top",
 }
 
@@ -24,6 +24,17 @@ const innerleft:  {[key: string]: string} = {
 
 const right1:  {[key: string]: string} = {
     color: "white",
+    fontSize: "24px",
+}
+const right2:  {[key: string]: string} = {
+    color: "white",
+    paddingTop:"10px",
+    fontSize: "18px",
+}
+
+const right3:  {[key: string]: string} = {
+    color: "white",
+    fontSize: "18px",
 }
 
 
@@ -35,17 +46,18 @@ class Footer extends React.Component {
           <Fragment>
             <div style={style}>
               <div style={place}>
-                  <p style={right1}>change1</p>
-                  <p style={right1}>change2</p>
-                  <p style={right1}>change3</p>
+                <h1 style={right1}>Test</h1>
+                <h2 style={right2}>xxxxxxxx</h2>
+                <h3 style={right3}>xxxxxxxxxx</h3>
               </div>
               <div style={place}>
-                <div style={style}>
-                <div style={rightchrt}>©Matthew - Masa</div>
-                </div>
+                <h1 style={right1}>お問い合わせ(ヘルプ&ガイド)</h1>
+                <h2 style={right2}>お問い合わせ</h2>
               </div>
               <div style={place}>
-                <div style={rightchrt}>©Matthew - Masa</div>
+                <h1 style={right1}>SNS</h1>
+                <h2 style={right2}>Instagram</h2>
+                <h2 style={right3}>Twitter</h2>
               </div>
             </div>
           </Fragment>
