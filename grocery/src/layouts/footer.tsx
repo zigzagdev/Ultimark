@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 
 const style: { [key: string]: string } = {
     position: "absolute",
@@ -7,18 +7,36 @@ const style: { [key: string]: string } = {
     backgroundColor: "black",
 };
 
-const chrct: { [key: string]: string } = {
+const rightchrt: { [key: string]: string } = {
     color: "white",
     textAlign: "right",
     paddingRight: "50px",
 };
 
+const  rightplace:  {[key: string]: string} = {
+    display:"inline-block",
+    padding:  "20px"
+}
+
+
+
+
 class Footer extends React.Component {
     render() {
       return (
-        <div style={style}>
-          <p style={chrct}>Matthew - Masa</p>
-        </div>
+          <Fragment>
+            <div style={style}>
+              <div style={rightplace}>
+                <p style={rightchrt}>Matthew - Masa</p>
+              </div>
+              <div style={rightplace}>
+                <p style={rightchrt}>Matthew - Masa</p>
+              </div>
+              <div style={rightplace}>
+                <p style={rightchrt}>Matthew - Masa</p>
+              </div>
+            </div>
+          </Fragment>
       );
     }
 }

@@ -20,11 +20,12 @@
 .App-header {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  text-align: left;
   color: white;
-  padding-left: 40px;
+  padding:20px 0 0  50px;
   height: 84px;
   background-color: black;
+  font-size: 38px;
 }
 
 .App-link {

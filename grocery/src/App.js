@@ -5,7 +5,6 @@ import  DarkMode from  './layouts/DarkMode.tsx'
 import  Main from './layouts/main'
 
 
-
 function App() {
   return (
     <body>

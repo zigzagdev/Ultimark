@@ -1,17 +1,17 @@
-import React from "react";
+import React, {Component} from "react";
 import '../App.css';
+import EachMenu from '../components/EachMenu'
+
 
 const character = {
-    backgroundColor: "white",
+    color: "white",
 }
 
-class Main extends React.Component {
+class Main extends Component {
     render() {
         return (
-            <div className= "main">
-
-            </div>
-        );
+            <EachMenu name = "Fuck you"/>
+        )
     }
 }
 
