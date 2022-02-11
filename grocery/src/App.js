@@ -1,19 +1,18 @@
 import './App.css';
-import  Footer from  './layouts/footer.tsx'
-import  Header from './layouts/header'
+import  Footer from  './layouts/Footer.tsx'
+import  Header from './layouts/Header'
 import  DarkMode from  './layouts/DarkMode.tsx'
-import  Main from './layouts/main'
+import  Main from './layouts/Main'
+import { Route, Routes } from "react-router-dom";
 
 
 function App() {
   return (
-    <body>
       <div className="Wrapper">
         <Header/>
         <Main/>
         <Footer/>
       </div>
-    </body>
   );
 }
 
