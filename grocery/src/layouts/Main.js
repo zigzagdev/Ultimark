@@ -15,8 +15,8 @@ const Main = () => {
   const history = useHistory();
   return (
       <Fragment>
-        
-        <p><a href="/French">French</a></p>
+        <a href="/Japanese" style={character}>Japanese</a>
+        <p><a href="/French" style={character}>French</a></p>
       </Fragment>
   );
 }
