@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93696015-5a00-496a-b35b-57c37d401d50" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/grocery/src/pages/Japanese.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grocery/src/pages/French.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grocery/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/grocery/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grocery/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/grocery/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grocery/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/grocery/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grocery/src/layouts/footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/grocery/src/layouts/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grocery/src/layouts/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/grocery/src/layouts/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grocery/src/layouts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/grocery/src/layouts/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grocery/src/layouts/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/grocery/src/layouts/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grocery/src/pages/Japanese.js" beforeDir="false" afterPath="$PROJECT_DIR$/grocery/src/pages/Japanese.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +17,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript File" />
-        <option value="JavaScript File" />
         <option value="TypeScript JSX File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -63,7 +60,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1644119295097</updated>
-      <workItem from="1644119302927" duration="41525000" />
+      <workItem from="1644119302927" duration="46707000" />
     </task>
     <servers />
   </component>

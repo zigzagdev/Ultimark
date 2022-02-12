@@ -1,22 +1,24 @@
-import React, {Component, Fragment} from "react";
-import '../App.css';
+import react, {Components, Fragment} from 'react';
 import EachMenu from '../components/EachMenu'
-import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter, Switch, Route, Link, useHistory } from "react-router-dom";
 import Japanese from '../pages/Japanese';
+import French from '../pages/French';
 
 
 const character = {
-    color: "white",
+  color: "white",
 }
 
 
-export default function Main() {
-    return (
-         <BrowserRouter>
-           <Switch>
-             <Route exact path="/Japanese" component={Japanese} aaartartrtr/>
-           </Switch>
-           <a href="/Japanese" style={character}>japanese</a>
-         </BrowserRouter>
-    );
+
+const Main = () => {
+  const history = useHistory();
+  return (
+      <Fragment>
+        
+        <p><a href="/French">French</a></p>
+      </Fragment>
+  );
 }
+
+export default Main ;
