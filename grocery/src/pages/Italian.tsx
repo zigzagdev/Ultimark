@@ -4,9 +4,12 @@ import React, {Fragment} from 'react';
 const Italian1:  {[key: string]: string} = {
     color: "white",
     fontSize: "18px",
+    marginTop: "auto",
+    textAlign:"left",
+    marginLeft: "122px"
 }
 const style: { [key: string]: string } = {
-    marginTop: "auto",
+    marginTop: "20px",
     width: "100%",
     backgroundColor: "black",
 };
@@ -41,7 +44,12 @@ class Italian extends React.Component {
     render(){
         return(
            <Fragment>
+             <div style={style}>
+               <h1 style={Italian1}>Here is Italian Menu Page .</h1>
+               <div>
 
+               </div>
+             </div>
            </Fragment>
         );
     }
