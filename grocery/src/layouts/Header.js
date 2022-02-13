@@ -34,9 +34,9 @@ export default function Header() {
       <Fragment>
         <div style={fragment}>
           <a href="/" style={home}>Home</a>
-          <a href="/Japanese" style={fontsize} >Japanese</a>
-          <a href="/French" style={fontsize}>French</a>
-          <a href="/Italian" style={fontsize}>Italian</a>
+          <a href="/Italian" style={fontsize}>ItalianPage</a>
+          <a href="/French" style={fontsize}>FrenchPage</a>
+          <a href="/Japanese" style={fontsize} >JapanesePage</a>
         </div>
       </Fragment>
     );
