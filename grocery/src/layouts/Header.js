@@ -11,12 +11,32 @@ const fontsize = {
     fontSize: "30px",
     color:"white",
     textDecoration: "none",
+    float:'right',
+    marginRight:'50px'
+}
+
+const fragment = {　　　　　　
+    display:"float",
+    marginTop:'30px',
+}
+const home = {
+    color: 'white',
+    fontSize:'30px',
+    textDecoration: "none",
+    float: 'left',
+    marginLeft:'70px',
+    
 }
 
 export default function Header() {
     return (
-        <div style={style}>
-            <a href="/" style={fontsize}>Home</a>
+      <Fragment>
+        <div style={fragment}>
+          <a href="/" style={home}>Home</a>
+          <a href="/Japanese" style={fontsize}>Japanese</a>
+          <a href="/French" style={fontsize}>French</a>
+          <a href="/Italian" style={fontsize}>Italian</a>
         </div>
+      </Fragment>
     );
 }
