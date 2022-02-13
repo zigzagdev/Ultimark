@@ -11,7 +11,7 @@ const character = {
 
 const outline = {
   textAlign: 'center',
-  marginTop: '18px'
+  marginTop: '26px'
 }
 
 const Italic = {

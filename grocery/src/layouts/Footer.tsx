@@ -37,6 +37,16 @@ const right3:  {[key: string]: string} = {
     fontSize: "18px",
 }
 
+const li1:  {[key: string]: string} = {
+    color: "azure",
+    fontSize: "24px",
+    marginTop: "10px",
+    textDecoration: "none",
+}
+
+const margin:  {[key: string]: string} = {
+    paddingTop: "14px",
+}
 
 
 
@@ -45,11 +55,11 @@ class Footer extends React.Component {
       return (
           <Fragment>
             <div style={style}>
-              <div style={place}>
-                <h1 style={right1}>Test</h1>
-                <h2 style={right2}>xxxxxxxx</h2>
-                <h3 style={right3}>xxxxxxxxxx</h3>
-              </div>
+              <ul style={place}>
+                <li><a href="/" style={li1}>Home</a></li>
+                <li style={margin}><a href="/" style={li1}>Home</a></li>
+
+                </ul>
               <div style={place}>
                 <h1 style={right1}>お問い合わせ(ヘルプ&ガイド)</h1>
                 <h2 style={right2}>お問い合わせ</h2>
