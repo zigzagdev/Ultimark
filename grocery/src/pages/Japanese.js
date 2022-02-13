@@ -1,5 +1,6 @@
 import React, {Fragment} from "react";
-
+import Button from '@material-ui/core/Button';
+import Card from '@material-ui/core/Card';
 
 const character = {
   color: "white",
@@ -21,6 +22,17 @@ const mainobj  = {
   textAlign: "left",
 }
 
+const cardcomponent = {
+  margin:'32px 0 18px 48px',
+}
+
+const card = {
+  width:"15rem",
+  height:'260px',
+  backgroundColor:'white',
+  
+}
+
 
 export default function Japanese() {
   const dishes =  [
@@ -37,6 +49,11 @@ return (
       <h1 style={character}>Japanese food page</h1>
       <div style={main}>
         <h1 style={mainobj}>Here are famous Japanese Dishes !</h1>
+      </div>
+      <div style={cardcomponent}>
+        <Card style={card}>
+
+        </Card>
       </div>
     </div>
   </Fragment>
