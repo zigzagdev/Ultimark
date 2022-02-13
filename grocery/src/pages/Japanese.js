@@ -7,7 +7,7 @@ const character = {
 }
 
 const outline  = {
-  margin: "28px 0 0 78px"
+  margin: "28px 0 108px 78px"
 }
 
 const main = {
@@ -17,7 +17,7 @@ const main = {
 const mainobj  = {
   fontSize: "27px",
   color: "lightpink",
-  margin: "11px 0 0 86px",
+  margin: "11px 0 0 66px",
   textAlign: "left",
 }
 
@@ -35,11 +35,10 @@ return (
   <Fragment>
     <div style={outline}>
       <h1 style={character}>Japanese food page</h1>
+      <div style={main}>
+        <h1 style={mainobj}>Here are famous Japanese Dishes !</h1>
+      </div>
     </div>
-    <div style={main}>
-      <h1 style={mainobj}>Here are famous Japanese traditonal Dishes !</h1>
-    </div>
-    
   </Fragment>
   );
 }
