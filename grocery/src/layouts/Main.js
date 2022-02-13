@@ -4,7 +4,7 @@ import Japanese from '../pages/Japanese';
 import French from '../pages/French';
 
 const character = {
-  color: "white",
+  color: 'aliceblue',
   textAlign:'left',
   margin:'56px 0 0 68px',
 }
@@ -16,14 +16,14 @@ const outline = {
 
 const Italic = {
   fontSize: '31px',
-  color: "azure",
+  color: 'aliceblue',
 }
 
 const line1 = {
-  display: "flex",
-  flexDirection: "row",
-  flexWrap: "wrap",
-  marginTop: "31px",
+  display: 'flex',
+  flexDirection: 'row',
+  flexWrap: 'wrap',
+  marginTop: '31px',
 }
 
 const line2 = {
@@ -36,9 +36,8 @@ const line2 = {
 const card = {
   width: '100px',
   height: '100px',
-  backgroundColor:'white',
-  marginLeft: "210px",
-  justifyContent: 'spacebetween'
+  backgroundColor:'aliceblue',
+  marginLeft: '210px',
 }
 
 const introduce = {
