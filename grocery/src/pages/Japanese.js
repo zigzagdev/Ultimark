@@ -2,7 +2,9 @@ import React from "react";
 
 
 const character = {
-    color: "white",
+  color: "white",
+  textAlign: "left",
+  margin: "28px 0 0 78px"
 }
 
 export default function Japanese() {

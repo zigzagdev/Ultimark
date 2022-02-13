@@ -1,7 +1,5 @@
 import React, {Fragment} from "react";
-import '../App.css';
 import Japanese from '../pages/Japanese';
-import "../App.css";
 
 const style = {
     textAlign: "left",
@@ -21,7 +19,7 @@ const fragment = {　　　　　　
     marginTop:'30px',
 }
 const home = {
-    color: 'white',
+    color: 'lightblue',
     fontSize:'30px',
     textDecoration: "none",
     float: 'left',
@@ -34,9 +32,9 @@ export default function Header() {
       <Fragment>
         <div style={fragment}>
           <a href="/" style={home}>Home</a>
-          <a href="/Italian" style={fontsize}>ItalianPage</a>
-          <a href="/French" style={fontsize}>FrenchPage</a>
-          <a href="/Japanese" style={fontsize} >JapanesePage</a>
+          <a href="/Italian" style={fontsize}>Italian</a>
+          <a href="/French" style={fontsize}>French</a>
+          <a href="/Japanese" style={fontsize} >Japanese</a>
         </div>
       </Fragment>
     );
