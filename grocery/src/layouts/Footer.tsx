@@ -57,9 +57,9 @@ class Footer extends React.Component {
             <div style={style}>
               <ul style={place}>
                 <li><a href="/" style={li1}>Home</a></li>
-                <li style={margin}><a href="/Italian" style={li1}>ItalianPage</a></li>
-                <li style={margin}><a href="/French" style={li1}>FrenchPage</a></li>
-                <li style={margin}><a href="/Japanese" style={li1}>JapanesePage</a></li>
+                <li style={margin}><a href="/Italian" style={li1}>Italian</a></li>
+                <li style={margin}><a href="/French" style={li1}>French</a></li>
+                <li style={margin}><a href="/Japanese" style={li1}>Japanese</a></li>
               </ul>
               <div style={place}>
                 <h1 style={right1}>お問い合わせ(ヘルプ&ガイド)</h1>
