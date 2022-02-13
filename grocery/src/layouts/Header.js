@@ -1,6 +1,7 @@
 import React, {Fragment} from "react";
 import '../App.css';
 import Japanese from '../pages/Japanese';
+import "../App.css";
 
 const style = {
     textAlign: "left",
@@ -33,7 +34,7 @@ export default function Header() {
       <Fragment>
         <div style={fragment}>
           <a href="/" style={home}>Home</a>
-          <a href="/Japanese" style={fontsize}>Japanese</a>
+          <a href="/Japanese" style={fontsize} >Japanese</a>
           <a href="/French" style={fontsize}>French</a>
           <a href="/Italian" style={fontsize}>Italian</a>
         </div>
