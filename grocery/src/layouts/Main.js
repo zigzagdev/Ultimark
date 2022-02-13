@@ -5,11 +5,22 @@ import French from '../pages/French';
 
 const character = {
   color: "white",
+  textAlign:'left',
+  marginLeft:'68px',
 }
+
+const outline = {
+
+}
+
 
 const Main = () => {
   return (
-  <div>aaaaaaaaattttttttttt</div>
+    <Fragment>
+      
+        <h1 style={character}>About Us</h1>
+
+    </Fragment>
   );
 }
 
