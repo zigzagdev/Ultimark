@@ -11,10 +11,6 @@ const outline  = {
   margin: "28px 0 108px 78px"
 }
 
-const main = {
-  
-}
-
 const mainobj  = {
   fontSize: "27px",
   color: "lightpink",
@@ -36,15 +32,13 @@ const card = {
   width:"15rem",
   height:'260px',
   backgroundColor:'white',
-  
 }
 
 const dishnameobj = {
   fontSize: '20px',
   marginLeft:'10px',
+  color: 'darkblue',
 }
-
-
 
 export default function Japanese() {
   const dishes =  [
@@ -56,23 +50,27 @@ export default function Japanese() {
     { "name": "nattou", "content": "delicious!", "image": "test6.jpg" },
     { "name": "goyachnpuru", "content": "delicious!", "image": "test7.jpg" },
   ]
-  const dishname = dishes.map(dish => dish.name)
-  const dishcontent = dishes.map(dish => dish.content)
-  const dishimage = dishes.map(dish => dish.image)
+  
 return (
   <Fragment>
     <div style={outline}>
       <h1 style={character}>Japanese food page</h1>
-      <div style={main}>
+      <div>
         <h1 style={mainobj}>Here are famous Japanese Dishes !</h1>
       </div>
       <div style={cardboss}>
-        <div style={cardcomponent}>
-          <Card style={card}>
-            <img src="../../../../Desktop/sushi.jpeg"/>
-            <h1 style={dishnameobj}>{dishname[0]}</h1>
-          </Card>
-        </div>
+        {dishes.map(dish => {
+          return (
+            <div style={cardcomponent}>
+              <Fragment>
+                <Card style={card}>
+                  <h1 style={dishnameobj}>{dish.name}</h1>
+                  <p>{dish.content}</p>
+                </Card>
+              </Fragment>
+            </div>
+          )
+        })}
       </div>
     </div>
   </Fragment>
