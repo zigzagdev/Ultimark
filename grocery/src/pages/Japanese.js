@@ -30,14 +30,23 @@ const cardcomponent = {
 
 const card = {
   width:"15rem",
-  height:'260px',
+  height:'280px',
   backgroundColor:'white',
+  tableLayout:'fixed',
 }
 
 const dishnameobj = {
   fontSize: '20px',
-  marginLeft:'10px',
+  marginTop:'131px',
   color: 'darkblue',
+}
+
+const contentobj = {
+  fontSize: '17px',
+  wordBreak: 'break-all',
+  overflowWrap: 'break-word',
+  textAlign: 'left',
+  margin: '3px 11px 0 11px'
 }
 
 export default function Japanese() {
@@ -45,7 +54,7 @@ export default function Japanese() {
     { "name": "sushi", "content": "test1", "image": "test.jpg" },
     { "name": "takoyaki", "content": "test2", "image": "test2.jpg" },
     { "name": "gyoza", "content": "delicious!", "image": "test3.jpg" },
-    { "name": "okonomiyaki", "content": "delicious!", "image": "test4.jpg" },
+    { "name": "okonomiyaki", "content": "delicious!delicious!delicious!delicious!delicious!delicious!delicious!delicious!", "image": "test4.jpg" },
     { "name": "kiritanpo", "content": "delicious!", "image": "test5.jpg" },
     { "name": "nattou", "content": "delicious!", "image": "test6.jpg" },
     { "name": "goyachnpuru", "content": "delicious!", "image": "test7.jpg" },
@@ -65,7 +74,7 @@ return (
               <Fragment>
                 <Card style={card}>
                   <h1 style={dishnameobj}>{dish.name}</h1>
-                  <p>{dish.content}</p>
+                  <p style={contentobj}>{dish.content}</p>
                 </Card>
               </Fragment>
             </div>
