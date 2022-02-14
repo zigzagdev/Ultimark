@@ -55,33 +55,33 @@ export default function Japanese() {
     { "name": "takoyaki", "content": "test2", "image": "test2.jpg" },
     { "name": "gyoza", "content": "delicious!", "image": "test3.jpg" },
     { "name": "okonomiyaki", "content": "delicious!delicious!delicious!delicious!delicious!delicious!delicious!delicious!", "image": "test4.jpg" },
-    { "name": "kiritanpo", "content": "delicious!", "image": "test5.jpg" },
+    { "name": "kiritanpo", "content": "This is AkitaPre. dish.", "image": "test5.jpg" },
     { "name": "nattou", "content": "delicious!", "image": "test6.jpg" },
     { "name": "goyachnpuru", "content": "delicious!", "image": "test7.jpg" },
   ]
   
-return (
-  <Fragment>
-    <div style={outline}>
-      <h1 style={character}>Japanese food page</h1>
-      <div>
-        <h1 style={mainobj}>Here are famous Japanese Dishes !</h1>
+  return (
+    <Fragment>
+      <div style={outline}>
+        <h1 style={character}>Japanese food page</h1>
+        <div>
+          <h1 style={mainobj}>Here are famous Japanese Dishes !</h1>
+        </div>
+        <div style={cardboss}>
+          {dishes.map(dish => {
+            return (
+              <div style={cardcomponent}>
+                <Fragment>
+                  <Card style={card}>
+                    <h1 style={dishnameobj}>{dish.name}</h1>
+                    <p style={contentobj}>{dish.content}</p>
+                  </Card>
+                </Fragment>
+              </div>
+            )
+          })}
+        </div>
       </div>
-      <div style={cardboss}>
-        {dishes.map(dish => {
-          return (
-            <div style={cardcomponent}>
-              <Fragment>
-                <Card style={card}>
-                  <h1 style={dishnameobj}>{dish.name}</h1>
-                  <p style={contentobj}>{dish.content}</p>
-                </Card>
-              </Fragment>
-            </div>
-          )
-        })}
-      </div>
-    </div>
-  </Fragment>
+    </Fragment>
   );
 }
