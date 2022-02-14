@@ -22,8 +22,14 @@ const mainobj  = {
   textAlign: "left",
 }
 
+const  cardboss = {
+  display: 'flex',
+  flexWrap: 'wrap',
+}
+
 const cardcomponent = {
-  margin:'32px 0 18px 48px',
+  margin:'32px 0 18px 62px',
+  flexWrap: 'wrap',
 }
 
 const card = {
@@ -33,13 +39,23 @@ const card = {
   
 }
 
+const dishnameobj = {
+  fontSize: '20px',
+  marginLeft:'10px',
+}
+
+
 
 export default function Japanese() {
   const dishes =  [
     { "name": "sushi", "content": "test1", "image": "test.jpg" },
     { "name": "takoyaki", "content": "test2", "image": "test2.jpg" },
     { "name": "gyoza", "content": "delicious!", "image": "test3.jpg" },
-    ]
+    { "name": "okonomiyaki", "content": "delicious!", "image": "test4.jpg" },
+    { "name": "kiritanpo", "content": "delicious!", "image": "test5.jpg" },
+    { "name": "nattou", "content": "delicious!", "image": "test6.jpg" },
+    { "name": "goyachnpuru", "content": "delicious!", "image": "test7.jpg" },
+  ]
   const dishname = dishes.map(dish => dish.name)
   const dishcontent = dishes.map(dish => dish.content)
   const dishimage = dishes.map(dish => dish.image)
@@ -50,10 +66,13 @@ return (
       <div style={main}>
         <h1 style={mainobj}>Here are famous Japanese Dishes !</h1>
       </div>
-      <div style={cardcomponent}>
-        <Card style={card}>
-
-        </Card>
+      <div style={cardboss}>
+        <div style={cardcomponent}>
+          <Card style={card}>
+            <img src="../../../../Desktop/sushi.jpeg"/>
+            <h1 style={dishnameobj}>{dishname[0]}</h1>
+          </Card>
+        </div>
       </div>
     </div>
   </Fragment>
