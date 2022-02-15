@@ -1,4 +1,4 @@
-import React, {Fragment} from "react";
+import React, {Fragment, useState} from "react";
 import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
 
@@ -58,7 +58,7 @@ const btn = {
 }
 
 export default function Japanese() {
-  const dishes =  [
+  const [dishes, setDishes] =  useState([
     { "name": "sushi", "content": "test1", "image": "test.jpg" },
     { "name": "takoyaki", "content": "test2", "image": "test2.jpg" },
     { "name": "gyoza", "content": "delicious!", "image": "test3.jpg" },
@@ -66,7 +66,7 @@ export default function Japanese() {
     { "name": "kiritanpo", "content": "This is AkitaPre. dish.", "image": "test5.jpg" },
     { "name": "nattou", "content": "delicious!", "image": "test6.jpg" },
     { "name": "goyachnpuru", "content": "delicious!", "image": "test7.jpg" },
-  ]
+  ]);
   
   return (
     <Fragment>
@@ -83,7 +83,9 @@ export default function Japanese() {
                   <Card style={card}>
                     <h1 style={dishnameobj}>{dish.name}</h1>
                     <p style={contentobj}>{dish.content}</p>
-                    <Button style={btn}>Detail</Button>
+                    <a href={`/Japanese/${dish.name}`}>
+                      <Button style={btn}>Detail</Button>
+                    </a>
                   </Card>
                 </Fragment>
               </div>

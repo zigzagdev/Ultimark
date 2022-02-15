@@ -70,6 +70,7 @@ const line3 = {
 
 
 const Main = () => {
+  console.log(Japanese);
   return (
     <Fragment>
       <h1 style={character}>About Us</h1>
@@ -88,7 +89,6 @@ const Main = () => {
           aaaaaaaaa
         </div>
         <div style={card}>
-          aaaaaaaaa
         </div>
         <div style={card}>
           aaaaaaaaa
