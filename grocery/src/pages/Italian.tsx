@@ -1,4 +1,6 @@
 import React, {Fragment} from 'react';
+import Button from '@material-ui/core/Button';
+import Card from '@material-ui/core/Card';
 
 
 const Italian1:  {[key: string]: string} = {
@@ -14,21 +16,36 @@ const style: { [key: string]: string } = {
     backgroundColor: "black",
 };
 
+const outline: { [key: string]: string } = {
+    margin: "38px 0 108px 78px"
+}
+
+const character: { [key: string]: string } = {
+    color: "white",
+    textAlign: "left",
+    fontSize: "30px",
+}
+
+const Spaghettis = [
+    { "id": 0, "itemname": "Seafood Spaghetti", content:"This is typical Italian Seafood Spaghetti!!"},
+    { "id": 1, "itemname": "Tomato Spaghetti" , content:"This is typical Italian Tomato Spaghetti!!"},
+]
+
 function Italian () {
-    const Spaghettis = [
-        { "id": 0, "itemname": "Seafood Spaghetti", content:"This is typical Italian Seafood Spaghetti!!"},
-        { "id": 1, "itemname": "Tomato Spaghetti" , content:"This is typical Italian Tomato Spaghetti!!"},
-    ]
     return (
-        <Fragment>
-        <div>
-            {
-                Spaghettis.map((key,value) =>
-                    <p style={Italian1}>{key.itemname}</p>
+      <Fragment>
+        <div style={outline}>
+          <div style={character}>Italian Page</div>
+            <div>
+              {Spaghettis.map(Spaghetti => {
+                return (
+                    <div style={Italian1}>{Spaghetti.itemname}</div>
+
                 )
-            }
+              }
+            )}
+          </div>
         </div>
-            <div style={Italian1}>aaaaaaaaaaaaa</div>
         </Fragment>
     )
 }
