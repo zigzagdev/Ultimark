@@ -19,7 +19,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Main}/>
           <Route exact path="/Japanese" component={Japanese} />
-          <Route exact path='/Japanese/:name' component={JapaneseDetail} />
+          <Route exact path='/Japanese/:id' />
           <Route exact path="/French" component={French} />
           <Route exact path="/Italian" component={Italian} />
           {/*<Route component={NoMatch}/>*/}

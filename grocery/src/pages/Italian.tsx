@@ -33,19 +33,3 @@ function Italian () {
     )
 }
 export default Italian ;
-
-// class Italian extends React.Component {
-//     render(){
-//         const eachitem = Sspaghetti.map((output, index) => {
-//             return `${index + 1}番目は${output}`;
-//            <Fragment>
-//              <div style={style}>
-//                <h1 style={Italian1}>Here is Italian Menu Page </h1>
-//              </div>
-//                <div>
-//                    console.log(Spaghetti[0]);
-//                </div>
-//            </Fragment>
-//         );
-//     }
-// }

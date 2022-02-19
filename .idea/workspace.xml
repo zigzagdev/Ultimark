@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="93696015-5a00-496a-b35b-57c37d401d50" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grocery/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/grocery/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grocery/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/grocery/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grocery/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/grocery/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grocery/src/layouts/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/grocery/src/layouts/Main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grocery/src/pages/Japanese.js" beforeDir="false" afterPath="$PROJECT_DIR$/grocery/src/pages/Japanese.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grocery/src/pages/JapaneseDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/grocery/src/pages/JapaneseDetail.js" afterDir="false" />
     </list>
@@ -52,7 +53,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+    <property name="settings.editor.selected.configurable" value="copyright" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -67,7 +68,7 @@
       <workItem from="1644119302927" duration="49036000" />
       <workItem from="1644630562295" duration="479000" />
       <workItem from="1644631211915" duration="1171000" />
-      <workItem from="1644636881788" duration="44563000" />
+      <workItem from="1644636881788" duration="49977000" />
     </task>
     <servers />
   </component>
