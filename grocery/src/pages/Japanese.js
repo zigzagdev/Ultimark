@@ -74,9 +74,7 @@ const Japanese = (props) => {
       <div style={outline}>
         <h1 style={character}>Japanese food page</h1>
         console.log(dishes[1])
-        <div>
-          <h1 style={mainobj}>Here are famous Japanese Dishes !</h1>
-        </div>
+        <h2 style={mainobj}>Here are famous Japanese Dishes !</h2>
         <div style={cardboss}>
           {dishes.map(dish => {
             return (

@@ -26,6 +26,33 @@ const character: { [key: string]: string } = {
     fontSize: "30px",
 }
 
+const mainobj: { [key: string]: string } = {
+    fontSize: "27px",
+    color: "lightblue",
+    margin: "11px 0 0 66px",
+    textAlign: "left",
+}
+
+const cardboss: { [key: string]: string } = {
+    display: 'flex',
+    flexWrap: 'wrap',
+}
+
+const card: { [key: string]: string } = {
+width:"16rem",
+    height:'302px',
+    backgroundColor:'white',
+    tableLayout:'fixed',
+    display: 'flex',
+    flexDirection: 'column',
+}
+
+const cardcomponent: { [key: string]: string } = {
+margin:'32px 0 18px 62px',
+    flexWrap: 'wrap',
+
+}
+
 const Spaghettis = [
     { "id": 0, "itemname": "Seafood Spaghetti", content:"This is typical Italian Seafood Spaghetti!!"},
     { "id": 1, "itemname": "Tomato Spaghetti" , content:"This is typical Italian Tomato Spaghetti!!"},
@@ -36,11 +63,15 @@ function Italian () {
       <Fragment>
         <div style={outline}>
           <div style={character}>Italian Page</div>
-            <div>
+          <h1 style={mainobj}>Here are Italian dishes Page .</h1>
+            <div style={cardboss}>
               {Spaghettis.map(Spaghetti => {
                 return (
-                    <div style={Italian1}>{Spaghetti.itemname}</div>
-
+                  <div style={cardcomponent}>
+                    <Card style={card}>
+                              <div style={Italian1}>{Spaghetti.itemname}</div>
+                    </Card>
+                  </div>
                 )
               }
             )}
