@@ -4,11 +4,8 @@ import Card from '@material-ui/core/Card';
 
 
 const Italian1:  {[key: string]: string} = {
-    color: "white",
+    color: "black",
     fontSize:'25px',
-    marginTop: "auto",
-    textAlign:"left",
-    marginLeft: "122px"
 }
 const style: { [key: string]: string } = {
     marginTop: "43px",
@@ -52,10 +49,27 @@ margin:'32px 0 18px 62px',
     flexWrap: 'wrap',
 
 }
+const dishnameobj: { [key: string]: string } = {
+fontSize: '20px',
+    marginTop:'111px',
+    color: 'darkblue',
+}
 
-const Spaghettis = [
+const contentobj: { [key: string]: string } = {
+    fontSize: '17px',
+    wordBreak: 'break-all',
+    overflowWrap: 'break-word',
+    textAlign: 'left',
+    margin: '3px 13px 0 13px',
+}
+
+
+const foods = [
     { "id": 0, "itemname": "Seafood Spaghetti", content:"This is typical Italian Seafood Spaghetti!!"},
     { "id": 1, "itemname": "Tomato Spaghetti" , content:"This is typical Italian Tomato Spaghetti!!"},
+    { "id": 2, "itemname": "SquidInk Spaghetti" , content:"This is typical Italian SquidInk Spaghetti"},
+    { "id": 3, "itemname": "Pizza Napoletana" , content:"This is typical Italian Pizza Napoletana"},
+    { "id": 4, "itemname": "Pizza Tonda Romana" , content:"This is typical Italian Pizza Tonda Romana"}
 ]
 
 function Italian () {
@@ -65,11 +79,12 @@ function Italian () {
           <div style={character}>Italian Page</div>
           <h1 style={mainobj}>Here are Italian dishes Page .</h1>
             <div style={cardboss}>
-              {Spaghettis.map(Spaghetti => {
+              {foods.map(food => {
                 return (
                   <div style={cardcomponent}>
                     <Card style={card}>
-                              <div style={Italian1}>{Spaghetti.itemname}</div>
+                      <h1 style={dishnameobj}>{food.itemname}</h1>
+                      <p style={contentobj}>{food.content}</p>
                     </Card>
                   </div>
                 )
