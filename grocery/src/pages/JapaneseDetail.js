@@ -1,21 +1,13 @@
-import  React, {Fragment, useState, useEffect } from 'react';
-import Japanese from './Japanese';
-import { useParams } from 'react-router-dom'
-import dishes from './Japanese'
+import React from "react";
 
-
-console.log(dishes)
 const character = {
   color: "white",
   textAlign: "left",
-}
+};
 
+const JapaneseDetail = (props) => {
+  console.log(props.dish);
+  return <p style={character}>Japanese</p>;
+};
 
-function JapaneseDetail () {
-  const { id } = useParams()
-return(
-  <p style={character}>{id}</p>
-)
-}
-
-export default JapaneseDetail;
+export { JapaneseDetail };
