@@ -1,6 +1,8 @@
 import React, {Fragment, useState, useEffect} from "react";
 import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
+import { JapaneseDetail } from "./JapaneseDetail";
+
 
 const character = {
   color: "white",
@@ -66,8 +68,9 @@ const dishes = [
   {id:7, name: "goyachnpuru", content: "delicious!", image: "test7.jpg" },
 ];
 
-function Japanese () {
-  
+
+function Japanese() {
+  console.log()
   return (
     <Fragment>
       <div style={outline}>
@@ -79,18 +82,18 @@ function Japanese () {
           {dishes.map(dish => {
             console.log(dish)
             return (
-              <div style={cardcomponent}>
-                <Fragment>
-                  <Card style={card}>
-                    <h1 style={dishnameobj}>{dish.name}</h1>
-                    <p style={contentobj}>{dish.content}</p>
-                    <a href={`/Japanese/${dish.id}`}>
-                      <Button style={btn}>Detail</Button>
-                    </a>
-                  </Card>
-                </Fragment>
-              </div>
-            )
+                <div style={cardcomponent}>
+                  <Fragment>
+                    <Card style={card}>
+                      <h1 style={dishnameobj}>{dish.name}</h1>
+                      <p style={contentobj}>{dish.content}</p>
+                      <a href={`/Japanese/${dish.id}`}>
+                        <Button style={btn}>Detail</Button>
+                      </a>
+                    </Card>
+                  </Fragment>
+                </div>
+              )
           })}
         </div>
       </div>
