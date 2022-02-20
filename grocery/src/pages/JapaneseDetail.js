@@ -1,21 +1,18 @@
-import  React, {Fragment, useState, useEffect } from 'react';
-import Japanese from './Japanese';
-import { useParams } from 'react-router-dom'
-import dishes from './Japanese'
+import React from "react";
+import { useParams } from "react-router-dom";
+import { dishes } from "../assets/demoData";
 
-
-console.log(dishes)
 const character = {
   color: "white",
   textAlign: "left",
-}
+};
 
-
-function JapaneseDetail () {
-  const { id } = useParams()
-return(
-  <p style={character}>{id}</p>
-)
+function JapaneseDetail() {
+  const { id } = useParams();
+  console.log(dishes);
+  const findById = dishes.find((dish) => dish.id === Number(id));
+  console.log(findById);
+  return <p style={character}>{id}</p>;
 }
 
 export default JapaneseDetail;
