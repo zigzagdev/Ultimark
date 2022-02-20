@@ -73,6 +73,7 @@ const foods = [
 ]
 
 function Italian () {
+    console.log(foods[2])
     return (
       <Fragment>
         <div style={outline}>

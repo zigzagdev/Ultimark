@@ -34,10 +34,11 @@ const line2 = {
 }
 
 const card = {
-  width: '100px',
-  height: '100px',
-  backgroundColor:'aliceblue',
-  marginLeft: '210px',
+  width: '196px',
+  height: '196px',
+  backgroundColor:'snow',
+  marginLeft: '130px',
+  
 }
 
 const introduce = {
@@ -68,6 +69,14 @@ const line3 = {
   margin: "51px 0 110px 0",
 }
 
+const word = {
+  display: "block",
+  fontSize: "20px",
+  textDecoration: "none",
+  marginTop: "141px",
+  color: "blue",
+}
+
 
 const Main = () => {
   return (
@@ -82,45 +91,46 @@ const Main = () => {
       <h1 style={introduce}> Sample Japanese Dish</h1>
       <div style={line1}>
         <div style={card}>
-          aaaaaaaaa
+          <a href="/Japanese" style={word}>Sushi</a>
         </div>
         <div style={card}>
-          aaaaaaaaa
+          <a href="/Japanese" style={word}>Sushi</a>
         </div>
         <div style={card}>
+          <a href="/Japanese" style={word}>Sushi</a>
         </div>
         <div style={card}>
-          aaaaaaaaa
+          <a href="/Japanese" style={word}>Sushi</a>
         </div>
       </div>
       <h1 style={introduce2}> Sample French Dish</h1>
       <div style={line2}>
         <div style={card}>
-          aaaaaaaaa
+          <a href="/French" style={word}>Sushi</a>
         </div>
         <div style={card}>
-          aaaaaaaaa
+          <a href="/French" style={word}>Sushi</a>
         </div>
         <div style={card}>
-          aaaaaaaaa
+          <a href="/French" style={word}>Sushi</a>
         </div>
         <div style={card}>
-          aaaaaaaaa
+          <a href="/French" style={word}>Sushi</a>
         </div>
       </div>
-      <h1 style={introduce3}> Sample French Dish</h1>
+      <h1 style={introduce3}> Sample Italian Dish</h1>
       <div style={line3}>
         <div style={card}>
-          aaaaaaaaa
+          <a href="/Italian" style={word}>Seafood Spaghetti</a>
         </div>
         <div style={card}>
-          aaaaaaaaa
+          <a href="/Italian" style={word}>Tomato Spaghetti</a>
         </div>
         <div style={card}>
-          aaaaaaaaa
+          <a href="/Italian" style={word}>SquidInk Spaghetti</a>
         </div>
         <div style={card}>
-          aaaaaaaaa
+          <a href="/Italian" style={word}>Pizza Napoletana</a>
         </div>
       </div>
     </Fragment>

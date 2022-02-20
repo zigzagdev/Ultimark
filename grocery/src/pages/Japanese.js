@@ -58,7 +58,7 @@ const btn = {
 }
 
 
-const Japanese = (props) => {
+function Japanese () {
   const dishes = [
     {id:1,  name: "sushi", content: "test1", image: "test.jpg" },
     {id:2, name: "takoyaki", content: "test2", image: "test2.jpg" },
@@ -74,7 +74,9 @@ const Japanese = (props) => {
       <div style={outline}>
         <h1 style={character}>Japanese food page</h1>
         console.log(dishes[1])
-        <h2 style={mainobj}>Here are famous Japanese Dishes !</h2>
+        <div>
+          <h1 style={mainobj}>Here are famous Japanese Dishes !</h1>
+        </div>
         <div style={cardboss}>
           {dishes.map(dish => {
             return (
