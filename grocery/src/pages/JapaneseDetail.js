@@ -1,13 +1,22 @@
-import React from "react";
+import { useParams } from "react-router-dom";
+import { dishes } from "../assets/dishes";
+
 
 const character = {
   color: "white",
   textAlign: "left",
 };
 
-const JapaneseDetail = (props) => {
-  console.log(props.dish);
-  return <p style={character}>Japanese</p>;
-};
+function JapaneseDetail() {
+  const { id } = useParams();
+  
+  const findById = dishes.find((dish) => dish.id === Number(id));
+  console.log(findById);
 
-export { JapaneseDetail };
+  return (
+    <p style={character}>{findById.content}</p>
+  )
+}
+
+export default JapaneseDetail;
+
