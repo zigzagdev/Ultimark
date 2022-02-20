@@ -56,29 +56,28 @@ const btn = {
   marginTop: 'auto',
   marginBottom: '7px',
 }
-
+const dishes = [
+  {id:1,  name: "sushi", content: "test1", image: "test.jpg" },
+  {id:2, name: "takoyaki", content: "test2", image: "test2.jpg" },
+  {id:3, name: "gyoza", content: "delicious!", image: "test3.jpg" },
+  {id:4, name: "okonomiyaki", content: "delicious!delicious!delicious!delicious!delicious!delicious!delicious!delicious!", image: "test4.jpg" },
+  {id:5, name: "kiritanpo", content: "This is AkitaPre. dish.", image: "test5.jpg" },
+  {id:6, name: "nattou", content: "delicious!", image: "test6.jpg" },
+  {id:7, name: "goyachnpuru", content: "delicious!", image: "test7.jpg" },
+];
 
 function Japanese () {
-  const dishes = [
-    {id:1,  name: "sushi", content: "test1", image: "test.jpg" },
-    {id:2, name: "takoyaki", content: "test2", image: "test2.jpg" },
-    {id:3, name: "gyoza", content: "delicious!", image: "test3.jpg" },
-    {id:4, name: "okonomiyaki", content: "delicious!delicious!delicious!delicious!delicious!delicious!delicious!delicious!", image: "test4.jpg" },
-    {id:5, name: "kiritanpo", content: "This is AkitaPre. dish.", image: "test5.jpg" },
-    {id:6, name: "nattou", content: "delicious!", image: "test6.jpg" },
-    {id:7, name: "goyachnpuru", content: "delicious!", image: "test7.jpg" },
-  ];
   
   return (
     <Fragment>
       <div style={outline}>
         <h1 style={character}>Japanese food page</h1>
-        console.log(dishes[1])
         <div>
           <h1 style={mainobj}>Here are famous Japanese Dishes !</h1>
         </div>
         <div style={cardboss}>
           {dishes.map(dish => {
+            console.log(dish)
             return (
               <div style={cardcomponent}>
                 <Fragment>
