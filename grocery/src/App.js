@@ -1,9 +1,8 @@
 import "./App.css";
 import Footer from "./layouts/Footer.tsx";
 import Header from "./layouts/Header";
-import DarkMode from "./layouts/DarkMode.tsx";
-import React, { Components, Fragment } from "react";
-import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
+import React from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Japanese from "./pages/Japanese";
 import JapaneseDetail from "./pages/JapaneseDetail";
 import French from "./pages/French";

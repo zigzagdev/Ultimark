@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { dishes } from "../assets/demoData";
+import { dishes } from "../assets/dishes";
 
 const character = {
   color: "white",

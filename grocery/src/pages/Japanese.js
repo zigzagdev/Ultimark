@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { dishes } from "../assets/demoData";
+import { dishes } from "../assets/dishes";
 import { DishItem } from "../components/dishItem";
 
 const character = {
@@ -32,9 +32,9 @@ function Japanese() {
           <h1 style={mainobj}>Here are famous Japanese Dishes !</h1>
         </div>
         <div style={cardboss}>
-          {dishes.map((dish, i) => {
-            return <DishItem key={i} dish={dish} />;
-          })}
+          {dishes.map((dish, i) => (
+            <DishItem key={i} dish={dish} />
+          ))}
         </div>
       </div>
     </Fragment>
