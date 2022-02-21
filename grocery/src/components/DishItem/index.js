@@ -4,6 +4,7 @@ import Card from "@material-ui/core/Card";
 const cardcomponent = {
   margin: "32px 0 18px 62px",
   flexWrap: "wrap",
+  display: "flex"
 };
 
 const card = {
@@ -31,7 +32,11 @@ const contentobj = {
 
 const btn = {
   marginTop: "auto",
-  marginBottom: "7px",
+  marginBottom: "13px",
+  backgroundColor: "lightpink",
+  textAlign: "center",
+  width: "140px",
+  marginLeft: "57px"
 };
 
 function DishItem(props) {
@@ -40,9 +45,10 @@ function DishItem(props) {
       <Card style={card}>
         <h1 style={dishnameobj}>{props.dish.name}</h1>
         <p style={contentobj}>{props.dish.content}</p>
-        <a href={`/Japanese/${props.dish.id}`}>
-          <Button style={btn}>Detail</Button>
-        </a>
+        <Button style={btn}>
+          <a href={`/Japanese/${props.dish.id}`}>Detail</a>
+        </Button>
+        
       </Card>
     </div>
   );
