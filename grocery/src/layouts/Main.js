@@ -2,7 +2,7 @@ import react, {Components, Fragment} from 'react';
 import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 import Japanese from '../pages/Japanese';
 import French from '../pages/French';
-import { japanese } from "../assets/dishes";
+import { japanese } from "../assets/dishes/assets";
 
 const character = {
   color: 'aliceblue',

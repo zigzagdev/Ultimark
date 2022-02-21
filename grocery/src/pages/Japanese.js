@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { japanese } from "../assets/dishes";
+import { japanese } from "../assets/dishes/assets";
 import { DishItem } from "../components/DishItem";
 
 

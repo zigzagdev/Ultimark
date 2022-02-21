@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { japanese } from "../assets/dishes";
+import { japanese } from "../assets/dishes/assets";
 
 
 const character = {
