@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { dishes } from "../assets/dishes";
+import { japanese } from "../assets/dishes";
 
 
 const character = {
@@ -15,7 +15,7 @@ const  main = {
 function JapaneseDetail() {
   const {id} = useParams();
   
-  const findById = dishes.find((dish) => dish.id === Number(id));
+  const findById = japanese.find((dish) => dish.id === Number(id));
   console.log(findById);
   
   return (

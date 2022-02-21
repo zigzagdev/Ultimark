@@ -2,7 +2,7 @@ import react, {Components, Fragment} from 'react';
 import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 import Japanese from '../pages/Japanese';
 import French from '../pages/French';
-import { dishes } from "../assets/dishes";
+import { japanese } from "../assets/dishes";
 
 const character = {
   color: 'aliceblue',
@@ -80,7 +80,7 @@ const word = {
 
 
 const Main = () => {
-  console.log(dishes)
+  console.log(japanese)
   return (
     <Fragment>
       <h1 style={character}>About Us</h1>

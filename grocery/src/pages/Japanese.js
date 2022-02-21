@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { dishes } from "../assets/dishes";
+import { japanese } from "../assets/dishes";
 import { DishItem } from "../components/DishItem";
 
 
@@ -33,7 +33,7 @@ function Japanese() {
           <h1 style={mainobj}>Here are famous Japanese Dishes !</h1>
         </div>
         <div style={cardboss}>
-          {dishes.map((dish, i) => (
+          {japanese.map((dish, i) => (
             <DishItem key={i} dish={dish} />
           ))}
         </div>
