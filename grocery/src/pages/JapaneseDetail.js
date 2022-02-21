@@ -5,16 +5,23 @@ import { dishes } from "../assets/dishes";
 const character = {
   color: "white",
   textAlign: "left",
+  
 };
 
+const  main = {
+  margin: "30px 0 0 180px"
+}
+
 function JapaneseDetail() {
-  const { id } = useParams();
+  const {id} = useParams();
   
   const findById = dishes.find((dish) => dish.id === Number(id));
   console.log(findById);
-
+  
   return (
-    <p style={character}>{findById.content}</p>
+    <div style={main}>
+      <h1 style={character}>{findById.name}</h1>
+    </div>
   )
 }
 

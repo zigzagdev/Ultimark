@@ -2,6 +2,7 @@ import react, {Components, Fragment} from 'react';
 import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 import Japanese from '../pages/Japanese';
 import French from '../pages/French';
+import { dishes } from "../assets/dishes";
 
 const character = {
   color: 'aliceblue',
@@ -79,6 +80,7 @@ const word = {
 
 
 const Main = () => {
+  console.log(dishes)
   return (
     <Fragment>
       <h1 style={character}>About Us</h1>
@@ -91,16 +93,16 @@ const Main = () => {
       <h1 style={introduce}> Sample Japanese Dish</h1>
       <div style={line1}>
         <div style={card}>
-          <a href="/Japanese" style={word}>Sushi</a>
+          <a href="/Japanese/1" style={word}>Sushi</a>
         </div>
         <div style={card}>
-          <a href="/Japanese" style={word}>Sushi</a>
+          <a href="/Japanese/2" style={word}>takoyaki</a>
         </div>
         <div style={card}>
-          <a href="/Japanese" style={word}>Sushi</a>
+          <a href="/Japanese/3" style={word}>Okonomiyaki</a>
         </div>
         <div style={card}>
-          <a href="/Japanese" style={word}>Sushi</a>
+          <a href="/Japanese/4" style={word}>Sushi</a>
         </div>
       </div>
       <h1 style={introduce2}> Sample French Dish</h1>
