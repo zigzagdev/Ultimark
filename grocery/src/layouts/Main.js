@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 import Japanese from '../pages/Japanese';
 import French from '../pages/French';
 import { japanese } from "../assets/dishes/assets";
+import Button from "@material-ui/core/Button";
 
 const character = {
   color: 'aliceblue',
@@ -35,10 +36,10 @@ const line2 = {
 }
 
 const card = {
-  width: '196px',
-  height: '196px',
+  width: '221px',
+  height: '256px',
   backgroundColor:'snow',
-  marginLeft: '130px',
+  marginLeft: '110px',
   
 }
 
@@ -74,8 +75,15 @@ const word = {
   display: "block",
   fontSize: "20px",
   textDecoration: "none",
-  marginTop: "141px",
+  marginTop: "171px",
   color: "blue",
+}
+
+const btn = {
+  color: "lightblue",
+  width: "120px",
+  height: "40px",
+  backgroundColor: "black",
 }
 
 
@@ -93,16 +101,24 @@ const Main = () => {
       <h1 style={introduce}> Sample Japanese Dish</h1>
       <div style={line1}>
         <div style={card}>
-          <a href="/Japanese/1" style={word}>Sushi</a>
+          <a href="/Japanese/1" style={word}>
+            <Button style={btn}>Sushi</Button>
+          </a>
         </div>
         <div style={card}>
-          <a href="/Japanese/2" style={word}>takoyaki</a>
+          <a href="/Japanese/2" style={word}>
+            <Button style={btn}>Takoyaki</Button>
+          </a>
         </div>
         <div style={card}>
-          <a href="/Japanese/3" style={word}>Okonomiyaki</a>
+          <a href="/Japanese/3" style={word}>
+            <Button style={btn}>Okonomiyaki</Button>
+          </a>
         </div>
         <div style={card}>
-          <a href="/Japanese/4" style={word}>Sushi</a>
+          <a href="/Japanese/4" style={word}>
+            <Button style={btn}>Macaron</Button>
+          </a>
         </div>
       </div>
       <h1 style={introduce2}> Sample French Dish</h1>
@@ -111,7 +127,9 @@ const Main = () => {
           <a href="/French" style={word}>Sushi</a>
         </div>
         <div style={card}>
-          <a href="/French" style={word}>Sushi</a>
+         <a href="/French" style={word}>
+           <Button style={btn}>Macaron</Button>
+         </a>
         </div>
         <div style={card}>
           <a href="/French" style={word}>Sushi</a>

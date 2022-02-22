@@ -33,11 +33,17 @@ const contentobj = {
 const btn = {
   marginTop: "auto",
   marginBottom: "13px",
-  backgroundColor: "lightpink",
+  backgroundColor: "lightgray",
   textAlign: "center",
   width: "140px",
   marginLeft: "57px"
 };
+
+const  href = {
+  textDecoration: "none",
+  color: "black",
+}
+
 
 function DishItem(props) {
   return (
@@ -46,7 +52,7 @@ function DishItem(props) {
         <h1 style={dishnameobj}>{props.dish.name}</h1>
         <p style={contentobj}>{props.dish.content}</p>
         <Button style={btn}>
-          <a href={`/Japanese/${props.dish.id}`}>Detail</a>
+          <a href={`/Japanese/${props.dish.id}`} style={href}>Detail</a>
         </Button>
         
       </Card>
