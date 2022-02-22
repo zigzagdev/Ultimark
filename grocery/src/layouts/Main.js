@@ -112,12 +112,12 @@ const Main = () => {
         </div>
         <div style={card}>
           <a href="/Japanese/3" style={word}>
-            <Button style={btn}>Okonomiyaki</Button>
+            <Button style={btn}>Gyoza</Button>
           </a>
         </div>
         <div style={card}>
           <a href="/Japanese/4" style={word}>
-            <Button style={btn}>Macaron</Button>
+            <Button style={btn}>Okonomiyaki</Button>
           </a>
         </div>
       </div>
