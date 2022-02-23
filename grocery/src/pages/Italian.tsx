@@ -1,6 +1,7 @@
 import React, {Fragment} from 'react';
 import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
+import {italian} from '../assets/dishes/assets'
 
 
 const Italian1:  {[key: string]: string} = {
@@ -64,23 +65,15 @@ const contentobj: { [key: string]: string } = {
 }
 
 
-const foods = [
-    { "id": 0, "itemname": "Seafood Spaghetti", content:"This is typical Italian Seafood Spaghetti!!"},
-    { "id": 1, "itemname": "Tomato Spaghetti" , content:"This is typical Italian Tomato Spaghetti!!"},
-    { "id": 2, "itemname": "SquidInk Spaghetti" , content:"This is typical Italian SquidInk Spaghetti"},
-    { "id": 3, "itemname": "Pizza Napoletana" , content:"This is typical Italian Pizza Napoletana"},
-    { "id": 4, "itemname": "Pizza Tonda Romana" , content:"This is typical Italian Pizza Tonda Romana"}
-]
-
 function Italian () {
-    console.log(foods[2])
+    console.log(italian)
     return (
       <Fragment>
         <div style={outline}>
           <div style={character}>Italian Page</div>
           <h1 style={mainobj}>Here are Italian dishes Page .</h1>
             <div style={cardboss}>
-              {foods.map(food => {
+              {italian.map(food => {
                 return (
                   <div style={cardcomponent}>
                     <Card style={card}>
