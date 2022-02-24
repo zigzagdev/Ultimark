@@ -8,6 +8,7 @@ import Main from "./layouts/Main";
 import Italian from "./pages/Italian";
 import ItalianDetail from  "./pages/ItalianDetail"
 import Footer from './layouts/Footer'
+import Form from './pages/Form'
 import './App.css'
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route exact path="/French" component={French}/>
           <Route exact path="/Italian" component={Italian}/>
           <Route exact path="/Italian/:id" component={ItalianDetail}/>
+          <Route exact path="/Form" component={Form}/>
         </Switch>
       </BrowserRouter>
       <Footer/>
