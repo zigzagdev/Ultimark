@@ -54,7 +54,6 @@ function DishItem(props) {
         <Button style={btn}>
           <a href={`/Japanese/${props.dish.id}`} style={href}>Detail</a>
         </Button>
-        
       </Card>
     </div>
   );
