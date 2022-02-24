@@ -64,9 +64,22 @@ const contentobj: { [key: string]: string } = {
     margin: '3px 13px 0 13px',
 }
 
+const btn: { [key: string]: string } = {
+    marginTop: "auto",
+    marginBottom: "13px",
+    backgroundColor: "lightgray",
+    textAlign: "center",
+    width: "140px",
+    marginLeft: "57px"
+};
+
+const href: { [key: string]: string } = {
+    textDecoration: "none",
+    color: "black",
+};
+
 
 function Italian () {
-    console.log(italian)
     return (
       <Fragment>
         <div style={outline}>
@@ -79,6 +92,9 @@ function Italian () {
                     <Card style={card}>
                       <h1 style={dishnameobj}>{food.itemname}</h1>
                       <p style={contentobj}>{food.content}</p>
+                      <Button style={btn}>
+                        <a href={`/Italian/${food.id}`} style={href}>Detail</a>
+                      </Button>
                     </Card>
                   </div>
                 )

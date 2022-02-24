@@ -25,11 +25,13 @@ const innerleft:  {[key: string]: string} = {
 const right1:  {[key: string]: string} = {
     color: "white",
     fontSize: "24px",
+    textDecoration: "none",
 }
 const right2:  {[key: string]: string} = {
     color: "white",
     paddingTop:"10px",
     fontSize: "18px",
+    textDecoration: "none"
 }
 
 const right3:  {[key: string]: string} = {
@@ -46,8 +48,8 @@ const li1:  {[key: string]: string} = {
 
 const margin:  {[key: string]: string} = {
     paddingTop: "14px",
+    marginRight: "20px",
 }
-
 
 
 class Footer extends React.Component {
@@ -55,15 +57,19 @@ class Footer extends React.Component {
       return (
           <Fragment>
             <div style={style}>
-              <ul style={place}>
-                <li><a href="/" style={li1}>Home</a></li>
+              <div style={place}>
+                <h1 style={right1}>Home</h1>
                 <li style={margin}><a href="/Italian" style={li1}>Italian</a></li>
                 <li style={margin}><a href="/French" style={li1}>French</a></li>
                 <li style={margin}><a href="/Japanese" style={li1}>Japanese</a></li>
-              </ul>
+              </div>
               <div style={place}>
-                <h1 style={right1}>お問い合わせ(ヘルプ&ガイド)</h1>
-                <h2 style={right2}>お問い合わせ</h2>
+                <h1 style={right1}>Contact</h1>
+                <h2 style={right2}>
+                  <a href="/Form" style={right2}>
+                    Contact Form
+                  </a>
+                </h2>
               </div>
               <div style={place}>
                 <h1 style={right1}>SNS</h1>

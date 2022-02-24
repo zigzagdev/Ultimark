@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import { japanese } from "../assets/dishes/assets";
-import { DishItem } from "../components/DishItem";
+import { DishItem } from "../components/dishitem/Index";
 
 
 const character = {

@@ -41,15 +41,13 @@ const right3:  {[key: string]: string} = {
 class French extends React.Component {
     render() {
         return (
-              <Fragment>
-                <div style={style}>
-                    <div style={place}>
-                        <h1 style={right1}>Test</h1>
-                        <h2 style={right2}>xxxxxxxx</h2>
-                        <h3 style={right3}>xxxxxxxxxx</h3>
-                    </div>
-                </div>
-              </Fragment>
+            <div style={style}>
+              <div style={place}>
+                <h1 style={right1}>Test</h1>
+                <h2 style={right2}>xxxxxxxx</h2>
+                <h3 style={right3}>xxxxxxxxxx</h3>
+              </div>
+            </div>
         );
     }
 }

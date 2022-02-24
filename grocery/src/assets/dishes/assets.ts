@@ -1,9 +1,9 @@
 const italian = [
-  { "id": 0, "itemname": "Seafood Spaghetti", content:"This is typical Italian Seafood Spaghetti!!"},
-  { "id": 1, "itemname": "Tomato Spaghetti" , content:"This is typical Italian Tomato Spaghetti!!"},
-  { "id": 2, "itemname": "SquidInk Spaghetti" , content:"This is typical Italian SquidInk Spaghetti"},
-  { "id": 3, "itemname": "Pizza Napoletana" , content:"This is typical Italian Pizza Napoletana"},
-  { "id": 4, "itemname": "Pizza Tonda Romana" , content:"This is typical Italian Pizza Tonda Romana"}
+  { id: "1", "itemname": "Seafood Spaghetti", content:"This is typical Italian Seafood Spaghetti!!"},
+  { id: "2", "itemname": "Tomato Spaghetti" , content:"This is typical Italian Tomato Spaghetti!!"},
+  { id: "3", "itemname": "SquidInk Spaghetti" , content:"This is typical Italian SquidInk Spaghetti"},
+  { id: "4", "itemname": "Pizza Napoletana" , content:"This is typical Italian Pizza Napoletana"},
+  { id: "5", "itemname": "Pizza Tonda Romana" , content:"This is typical Italian Pizza Tonda Romana"}
 ];
 
 const japanese = [
