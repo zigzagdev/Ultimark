@@ -20,21 +20,30 @@ const outword: { [key: string]: string } = {
 
 const formword: { [key: string]: string } = {
     color: "snow",
-    textAlign: "center",
     fontSize: "27px",
 }
 
 const nameform: { [key: string]: string } = {
-    width: "410px",
+    width: "439px",
     height: "43px",
-    margin: "0 40px",
     paddingLeft: "11px"
 }
 
 const textform: { [key: string]: string } = {
     dispkay: "flex",
     flexDirection: "row",
+    margin: "42px 112px 0 0"
+}
 
+const textform2: { [key: string]: string } = {
+    marginTop: "40px",
+
+}
+
+const subjectform: { [key: string]: string } = {
+    width: "1090px",
+    height: "43px",
+    marginLeft: "11px"
 }
 
 
@@ -48,26 +57,33 @@ function Form () {
           <h2 style={formword}>Fullfill the form(以下、入力ください)</h2>
           <form>
             <div>
-              <label htmlFor="nameForm">Your Name (氏名)</label>
-            </div>
-            <div style={textform}>
-              <input
-                type = "text"
-                id = "nameForm"
-                className = "formInput"
-                placeholder = "Name(氏名)"
-                style={nameform}
-              />
-              <input
-                type = "text"
-                id = "mailForm"
-                className = "formInput"
-                placeholder = "Address(メールアドレス)"
-                style={nameform}
+              <div style={textform}>
+                <label htmlFor="nameForm">Your Name (氏名)</label>
+                <input
+                  type = "text"
+                  id = "nameForm"
+                  className = "formInput"
+                  placeholder = "Name(氏名)"
+                  style={nameform}
                 />
-            </div>
-            <div>
-
+                <label htmlFor="nameForm">Address(メールアドレス)</label>
+                <input
+                  type = "text"
+                  id = "mailForm"
+                  className = "formInput"
+                  placeholder = "Address(メールアドレス)"
+                  style={nameform}
+                  />
+              </div>
+              <div style={textform2}>
+                <input
+                  type = "text"
+                  id = "mailForm"
+                  className = "formInput"
+                  placeholder = "Subject(件名)"
+                  style={subjectform}
+                />
+              </div>
             </div>
           </form>
         </div>
