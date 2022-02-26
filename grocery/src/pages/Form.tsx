@@ -8,31 +8,34 @@ const rightchrt: { [key: string]: string } = {
 };
 
 const outline: { [key: string]: string } = {
-    margin: "42px 0 100px 0",
+    margin: "62px 0 100px 0",
 };
 
 const outword: { [key: string]: string } = {
     color: "snow",
     fontSize: "30px",
     textAlign: "left",
-    marginLeft: "160px"
+    margin: "0 0 48px 160px"
 };
 
 const formword: { [key: string]: string } = {
     color: "snow",
     fontSize: "27px",
+    margin: "50px 0  90px 0"
 }
 
 const nameform: { [key: string]: string } = {
     width: "439px",
     height: "43px",
-    paddingLeft: "11px"
+    paddingLeft: "11px",
+    backgroundColor: "#EEEEEE"
 }
 
 const textform: { [key: string]: string } = {
     dispkay: "flex",
     flexDirection: "row",
-    margin: "42px 112px 0 0"
+    margin: "42px 112px 0 0",
+
 }
 
 const textform2: { [key: string]: string } = {
@@ -43,7 +46,8 @@ const subjectform: { [key: string]: string } = {
     width: "1082px",
     height: "43px",
     marginLeft: "21px",
-    paddingLeft: "11px"
+    paddingLeft: "11px",
+    backgroundColor: "#EEEEEE"
 }
 
 const content: { [key: string]: string } = {
@@ -56,6 +60,7 @@ const contentform: { [key: string]: string } = {
     marginRight: "150px",
     marginLeft: "172px",
     padding: "17px 0 0 11px",
+    backgroundColor: "#EEEEEE",
 }
 
 
