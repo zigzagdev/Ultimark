@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../layouts/Footer'
 
 const rightchrt: { [key: string]: string } = {
     color: "white",
@@ -7,8 +8,7 @@ const rightchrt: { [key: string]: string } = {
 };
 
 const outline: { [key: string]: string } = {
-    marginTop: "42px",
-
+    margin: "42px 0 100px 0",
 };
 
 const outword: { [key: string]: string } = {
@@ -37,13 +37,25 @@ const textform: { [key: string]: string } = {
 
 const textform2: { [key: string]: string } = {
     marginTop: "40px",
-
 }
 
 const subjectform: { [key: string]: string } = {
-    width: "1090px",
+    width: "1082px",
     height: "43px",
-    marginLeft: "11px"
+    marginLeft: "21px",
+    paddingLeft: "11px"
+}
+
+const content: { [key: string]: string } = {
+    marginTop: "20px"
+}
+
+const contentform: { [key: string]: string } = {
+    width: "1091px",
+    height: "123px",
+    marginRight: "150px",
+    marginLeft: "172px",
+    padding: "17px 0 0 11px",
 }
 
 
@@ -73,16 +85,25 @@ function Form () {
                   className = "formInput"
                   placeholder = "Address(メールアドレス)"
                   style={nameform}
-                  />
+                />
               </div>
               <div style={textform2}>
                 <input
                   type = "text"
-                  id = "mailForm"
+                  id = "subjectForm"
                   className = "formInput"
                   placeholder = "Subject(件名)"
                   style={subjectform}
                 />
+              </div>
+              <div style={content}>
+                <label htmlFor="contentForm">Content(お問い合わせ内容)</label>
+                <textarea
+                  id="mailContentForm"
+                  className="formInput"
+                  placeholder = "Content(お問い合わせ内容)"
+                  style={contentform}
+                  />
               </div>
             </div>
           </form>

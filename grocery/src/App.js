@@ -1,4 +1,4 @@
-import React, { Components, Fragment } from "react";
+import React, { Components } from "react";
 import Header from  './layouts/Header'
 import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 import Japanese from "./pages/Japanese";
