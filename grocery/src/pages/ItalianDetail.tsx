@@ -3,16 +3,11 @@ import { italian } from "../assets/dishes/assets"
 import { useParams } from 'react-router-dom';
 
 
-interface array {
+interface findid {
     id: number;
     itemname: string;
     content: string;
 }
-
-interface id {
-    id: number;
-}
-
 
 const Italian1:  {[key: string]: string} = {
     color: "white"
@@ -20,7 +15,13 @@ const Italian1:  {[key: string]: string} = {
 
 function ItalianDetail() {
 
+    const id: number = useParams();
+    const findid = italian.find((key, value) => key.id == Number(id));
+    console.log(id)
+    return (
+        <h1 style={Italian1}>{findid}</h1>
+    )
 }
 
 
-export  default ItalianDetail;
+export default ItalianDetail;

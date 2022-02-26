@@ -53,33 +53,31 @@ const margin:  {[key: string]: string} = {
 
 
 class Footer extends React.Component {
-    render() {
-      return (
-          <Fragment>
-            <div style={style}>
-              <div style={place}>
-                <h1 style={right1}>Home</h1>
-                <li style={margin}><a href="/Italian" style={li1}>Italian</a></li>
-                <li style={margin}><a href="/French" style={li1}>French</a></li>
-                <li style={margin}><a href="/Japanese" style={li1}>Japanese</a></li>
-              </div>
-              <div style={place}>
-                <h1 style={right1}>Contact</h1>
-                <h2 style={right2}>
-                  <a href="/Form" style={right2}>
-                    Contact Form
-                  </a>
-                </h2>
-              </div>
-              <div style={place}>
-                <h1 style={right1}>SNS</h1>
-                <h2 style={right2}>Instagram</h2>
-                <h2 style={right3}>Twitter</h2>
-              </div>
-            </div>
-          </Fragment>
-      );
-    }
+  render() {
+    return (
+      <div style={style}>
+        <div style={place}>
+          <h1 style={right1}>Home</h1>
+          <li style={margin}><a href="/Italian" style={li1}>Italian</a></li>
+          <li style={margin}><a href="/French" style={li1}>French</a></li>
+          <li style={margin}><a href="/Japanese" style={li1}>Japanese</a></li>
+        </div>
+        <div style={place}>
+          <h1 style={right1}>SNS</h1>
+          <h2 style={right2}>Instagram</h2>
+          <h2 style={right3}>Twitter</h2>
+        </div>
+        <div style={place}>
+          <h1 style={right1}>Others</h1>
+          <h2 style={right2}>
+            <a href="/Form" style={right2}>
+              Contact Form
+            </a>
+          </h2>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default Footer;
