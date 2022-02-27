@@ -15,8 +15,11 @@ const Italian1:  {[key: string]: string} = {
 
 function ItalianDetail() {
 
-    const id = useParams();
-    const findid = italian!.find((key, value) => key.id == Number(id));
+    const strid = useParams();
+    console.log(strid);
+    var id = Number(strid);
+    console.log(id)
+    const findid = italian.find((v) => v.id === id);
     console.log(findid)
     return (
         <h1 style={Italian1}>{findid}</h1>

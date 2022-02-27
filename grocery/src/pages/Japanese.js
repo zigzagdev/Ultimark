@@ -6,6 +6,7 @@ import { DishItem } from "../components/dishitem/Index";
 const character = {
   color: "white",
   textAlign: "left",
+ 
 };
 
 const outline = {

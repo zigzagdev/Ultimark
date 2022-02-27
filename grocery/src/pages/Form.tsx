@@ -1,5 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Footer from '../layouts/Footer'
+import Button from '@material-ui/core/Button';
+import { init, send } from 'emailjs-com';
+
 
 const rightchrt: { [key: string]: string } = {
     color: "white",
@@ -15,7 +18,11 @@ const outword: { [key: string]: string } = {
     color: "snow",
     fontSize: "30px",
     textAlign: "left",
-    margin: "0 0 48px 160px"
+    margin: "0 0 48px 160px",
+    textDecorationLine: "underline",
+    paddingBottom:"2px",
+    borderBottom: "1px",
+    textDecolationColor: "snow",
 };
 
 const formword: { [key: string]: string } = {
@@ -27,7 +34,7 @@ const formword: { [key: string]: string } = {
 const nameform: { [key: string]: string } = {
     width: "439px",
     height: "43px",
-    paddingLeft: "11px",
+    padding: "0 11px 0",
     backgroundColor: "#EEEEEE"
 }
 
@@ -50,7 +57,7 @@ const subjectform: { [key: string]: string } = {
     backgroundColor: "#EEEEEE"
 }
 
-const content: { [key: string]: string } = {
+const contentcss: { [key: string]: string } = {
     marginTop: "20px"
 }
 
@@ -63,9 +70,44 @@ const contentform: { [key: string]: string } = {
     backgroundColor: "#EEEEEE",
 }
 
+const btnoutline: { [key: string]: string } = {
+    dispkay: "flex",
+    marginTop: "26px",
+    justifyContent:"center"
+}
 
+const btn: { [key: string]: string } = {
+    margin: "0 50px 0",
+    borderColor: "pink",
+}
 
 function Form () {
+    const [name, setName] = useState('');
+    const [mail, setMail] = useState('');
+    const [subject, setSubject] = useState('');
+    const [content, setContent] = useState('');
+
+    const userID = process.env.REACT_APP_EmailJS_USER_ID;
+    const serviceID = process.env.REACT_APP_EmailJS_SERVICE_ID;
+    const templateID = process.env.REACT_APP_EmailJS_TEMPLATE_ID;
+
+    const handleChange = () => {
+        window.alert('お問い合わせを送信致しました。');
+        setName('');
+        setMail('');
+        setSubject('');
+        setContent('');
+    };
+
+    const handleCanceled = () => {
+        setName('');
+        setMail('');
+        setSubject('');
+        setContent('');
+    };
+    const disableSend =
+        name === '' || mail === '' || subject === '' || content === '';
+
 
     return(
       <div style={outline}>
@@ -82,14 +124,18 @@ function Form () {
                   className = "formInput"
                   placeholder = "Name(氏名)"
                   style={nameform}
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                 />
-                <label htmlFor="nameForm">Address(メールアドレス)</label>
+                <label htmlFor="nameForm">Email(メールアドレス)</label>
                 <input
                   type = "text"
                   id = "mailForm"
                   className = "formInput"
                   placeholder = "Address(メールアドレス)"
                   style={nameform}
+                  value={ mail }
+                  onChange={(e) => setMail(e.target.value)}
                 />
               </div>
               <div style={textform2}>
@@ -99,16 +145,28 @@ function Form () {
                   className = "formInput"
                   placeholder = "Subject(件名)"
                   style={subjectform}
+                  value={ subject }
+                  onChange={(e) => setSubject(e.target.value)}
                 />
               </div>
-              <div style={content}>
+              <div style={contentcss}>
                 <label htmlFor="contentForm">Content(お問い合わせ内容)</label>
                 <textarea
                   id="mailContentForm"
                   className="formInput"
                   placeholder = "Content(お問い合わせ内容)"
                   style={contentform}
-                  />
+                  value={content}
+                  onChange={(e) => setContent(e.target.value)}
+                />
+              </div>
+              <div style={btnoutline}>
+                <Button variant="contained" color="default" style={btn} onClick={handleChange} disabled={disableSend}>
+                  <strong>Submit(送信する)</strong>
+                </Button>
+                <Button variant="contained" color="default" style={btn}  onClick={handleCanceled}>
+                  <strong>Cancel(キャンセル)</strong>
+                </Button>
               </div>
             </div>
           </form>

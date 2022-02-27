@@ -88,14 +88,13 @@ const btn = {
 
 
 const Main = () => {
-  console.log(japanese)
   return (
     <Fragment>
       <h1 style={character}>About Us</h1>
       <div style={outline}>
         <i style={Italic}>
           At here, we serve the typical World Food list.<br/>
-          In general, we display some type dish, so if you can't find what you want, I'm so sorry for it .
+          In general, we display some type of dishes, so if you can't find what you want, I'm so sorry for it .
         </i>
       </div>
       <h1 style={introduce}> Sample Japanese Dish</h1>
