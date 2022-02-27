@@ -19,10 +19,9 @@ const outword: { [key: string]: string } = {
     fontSize: "30px",
     textAlign: "left",
     margin: "0 0 48px 160px",
-    textDecorationLine: "underline",
     paddingBottom:"2px",
-    borderBottom: "1px",
-    textDecolationColor: "snow",
+    borderBottom: "2px solid snow",
+    width:"400px",
 };
 
 const formword: { [key: string]: string } = {
