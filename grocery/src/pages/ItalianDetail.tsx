@@ -2,25 +2,23 @@ import  React from 'react';
 import { italian } from "../assets/dishes/assets"
 import { useParams } from 'react-router-dom';
 
-
-interface findid {
-    id: number;
-    itemname: string;
-    content: string;
+interface RouterParams {
+    id: string
 }
 
 const Italian1:  {[key: string]: string} = {
     color: "white"
 }
- 
-export const ItalianDetail = () => {
-    const strid = useParams<{ strid: string }>()
-    const id = Number(strid)
-    console.log(id)
-    const findid = italian.find((v) => v.id == id);
-    console.log(findid)
+
+const ItalianDetail = ()  => {
+    const {id} = useParams<RouterParams>();
+    const intid = parseInt(id)
+    const findid = italian.find((key, value) => key.id == intid);
+    
     return (
-        <h1 style={Italian1}>{findid}</h1>
+        <>
+            <div style={Italian1}>{}</div>
+        </>
     )
 }
 
