@@ -12,20 +12,24 @@ interface findid {
     content: string
 }
 
-
 const Italian1:  {[key: string]: string} = {
     color: "white",
+}
+
+const outline:  {[key: string]: string} = {
+    margin: "62px 0 0 210px",
+    textAlign: "left",
 }
 
 const ItalianDetail = ()  => {
     const {id} = useParams<RouterParams>();
     const intid = parseInt(id)
-    const findid = italian.find((dish) => dish.id == intid);
-    // console.log(findid.id)
+    const array = italian.find((dish) => dish.id == intid);
+    
     return (
-        <>
-            <div style={Italian1}>{findid!.content}</div>
-        </>
+      <div style={outline}>
+        <h1 style={Italian1}>{array?.content}</h1>
+      </div>
     )
 }
 
