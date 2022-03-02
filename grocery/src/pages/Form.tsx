@@ -82,7 +82,7 @@ const btn: { [key: string]: string } = {
 
 function Form () {
     const [name, setName] = useState('');
-    const [mail, setMail] = useState('');
+    const [email, setEmail] = useState('');
     const [subject, setSubject] = useState('');
     const [content, setContent] = useState('');
 
@@ -93,20 +93,19 @@ function Form () {
     const handleChange = () => {
         window.alert('お問い合わせを送信致しました。');
         setName('');
-        setMail('');
+        setEmail('');
         setSubject('');
         setContent('');
     };
 
     const handleCanceled = () => {
         setName('');
-        setMail('');
+        setEmail('');
         setSubject('');
         setContent('');
     };
     const disableSend =
-        name === '' || mail === '' || subject === '' || content === '';
-
+        name === '' || name.length < 8 || email === '' || subject === '' || content === ''
 
     return(
       <div style={outline}>
@@ -126,15 +125,14 @@ function Form () {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                 />
-                <label htmlFor="nameForm">Email(メールアドレス)</label>
+                <label htmlFor="emailForm">Email(メールアドレス)</label>
                 <input
-                  type = "text"
+                  type = "email"
+                  name = "email"
                   id = "mailForm"
-                  className = "formInput"
                   placeholder = "Address(メールアドレス)"
                   style={nameform}
-                  value={ mail }
-                  onChange={(e) => setMail(e.target.value)}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
               <div style={textform2}>

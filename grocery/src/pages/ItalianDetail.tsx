@@ -21,14 +21,21 @@ const outline:  {[key: string]: string} = {
     textAlign: "left",
 }
 
+const Italian2:  {[key: string]: string} = {
+    color: "white",
+    marginTop: "31px",
+}
+
+
 const ItalianDetail = ()  => {
     const {id} = useParams<RouterParams>();
     const intid = parseInt(id)
     const array = italian.find((dish) => dish.id == intid);
-    
+
     return (
       <div style={outline}>
-        <h1 style={Italian1}>{array?.content}</h1>
+        <h1 style={Italian1}>{array?.itemname}</h1>
+        <h2 style={Italian2}>{array?.content}</h2>
       </div>
     )
 }
