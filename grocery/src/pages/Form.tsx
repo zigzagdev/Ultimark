@@ -105,7 +105,10 @@ function Form () {
         setContent('');
     };
     const disableSend =
-        name === '' || name.length < 8 || email === '' || subject === '' || content === ''
+        name === '' || name.length < 8 || 
+        email === '' || 
+        subject === ''  || subject.length < 10 ||
+        content === '' || content.length < 20 
 
     return(
       <div style={outline}>
