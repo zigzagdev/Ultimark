@@ -21,6 +21,7 @@ function App() {
           <Route exact path="/Japanese" component={Japanese}/>
           <Route exact path="/Japanese/:id" component={JapaneseDetail}/>
           <Route exact path="/French" component={French}/>
+          {/*<Route exact path="/French/:id" component={FrenchDetail}/>*/}
           <Route exact path="/Italian" component={Italian}/>
           <Route exact path="/Italian/:id" component={ItalianDetail}/>
           <Route exact path="/Form" component={Form}/>
