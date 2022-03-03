@@ -29,6 +29,10 @@ const japanese = [
 
 const french = [
   { id: 1, name: "macaron", content: "This is french snack.", image: "test.jpg" },
+  { id: 2 , name:"quiche lorraine" , content:"This is french dish." , image:"aa.jpg"},
+  { id: 3 , name:"croque-monsieur" , content:"This is french dish." , image:"bb.jpg"},
+  { id: 4 , name:"mille-feuille" , content:"This is french snack." , image:"aaa.jpg"},
+  { id: 5 , name:"la Clef" , content:"This is french dish." , image:"iii.jpg"},
 ];
 
 
