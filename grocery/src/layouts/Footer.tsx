@@ -25,11 +25,13 @@ const innerleft:  {[key: string]: string} = {
 const right1:  {[key: string]: string} = {
     color: "white",
     fontSize: "24px",
+    textDecoration: "none",
 }
 const right2:  {[key: string]: string} = {
     color: "white",
     paddingTop:"10px",
     fontSize: "18px",
+    textDecoration: "none"
 }
 
 const right3:  {[key: string]: string} = {
@@ -37,32 +39,45 @@ const right3:  {[key: string]: string} = {
     fontSize: "18px",
 }
 
+const li1:  {[key: string]: string} = {
+    color: "azure",
+    fontSize: "24px",
+    marginTop: "10px",
+    textDecoration: "none",
+}
 
+const margin:  {[key: string]: string} = {
+    paddingTop: "14px",
+    marginRight: "20px",
+}
 
 
 class Footer extends React.Component {
-    render() {
-      return (
-          <Fragment>
-            <div style={style}>
-              <div style={place}>
-                <h1 style={right1}>Test</h1>
-                <h2 style={right2}>xxxxxxxx</h2>
-                <h3 style={right3}>xxxxxxxxxx</h3>
-              </div>
-              <div style={place}>
-                <h1 style={right1}>お問い合わせ(ヘルプ&ガイド)</h1>
-                <h2 style={right2}>お問い合わせ</h2>
-              </div>
-              <div style={place}>
-                <h1 style={right1}>SNS</h1>
-                <h2 style={right2}>Instagram</h2>
-                <h2 style={right3}>Twitter</h2>
-              </div>
-            </div>
-          </Fragment>
-      );
-    }
+  render() {
+    return (
+      <div style={style}>
+        <div style={place}>
+          <h1 style={right1}>Home</h1>
+          <li style={margin}><a href="/Italian" style={li1}>Italian</a></li>
+          <li style={margin}><a href="/French" style={li1}>French</a></li>
+          <li style={margin}><a href="/Japanese" style={li1}>Japanese</a></li>
+        </div>
+        <div style={place}>
+          <h1 style={right1}>SNS</h1>
+          <h2 style={right2}>Instagram</h2>
+          <h2 style={right3}>Twitter</h2>
+        </div>
+        <div style={place}>
+          <h1 style={right1}>Others</h1>
+          <h2 style={right2}>
+            <a href="/Form" style={right2}>
+              Contact Form
+            </a>
+          </h2>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default Footer;

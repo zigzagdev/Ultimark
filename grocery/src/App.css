@@ -33,17 +33,4 @@
 }
 
 
-.main {
-  background-color: black;
-  min-height: calc(100vh - 100px);
-  padding-bottom: 30px;
-}
-.body {
-  position: relative;
-}
 
-.style {
-  margin-Top: auto;
-  width: 100%;
- background-color: black;
-}
