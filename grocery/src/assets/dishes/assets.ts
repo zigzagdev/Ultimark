@@ -27,4 +27,9 @@ const japanese = [
   { id: 7, name: "goyachnpuru", content: "delicious!", image: "test7.jpg" },
 ];
 
-export { japanese, italian };
+const french = [
+  { id: 1, name: "macaron", content: "This is french snack.", image: "test.jpg" },
+];
+
+
+export { japanese, italian, french };
