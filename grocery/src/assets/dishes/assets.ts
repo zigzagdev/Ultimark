@@ -28,7 +28,61 @@ const italian = [
     itemname: "Pizza Tonda Romana",
     content: "This is typical Italian Pizza Tonda Romana",
     image: require('../../images/tondapizza.jpeg')
-  }
+  },
+  {
+    id: 6,
+    itemname: "Pizza Tonda Romana",
+    content: "This is typical Italian Pizza Tonda Romana",
+    image: require('../../images/tondapizza.jpeg')
+  },
+  {
+    id: 7,
+    itemname: "Pizza Tonda Romana",
+    content: "This is typical Italian Pizza Tonda Romana",
+    image: require('../../images/tondapizza.jpeg')
+  },
+  {
+    id: 8,
+    itemname: "Pizza Tonda Romana",
+    content: "This is typical Italian Pizza Tonda Romana",
+    image: require('../../images/tondapizza.jpeg')
+  },
+  {
+    id: 9,
+    itemname: "Pizza Tonda Romana",
+    content: "This is typical Italian Pizza Tonda Romana",
+    image: require('../../images/tondapizza.jpeg')
+  },
+  {
+    id: 10,
+    itemname: "Pizza Tonda Romana",
+    content: "This is typical Italian Pizza Tonda Romana",
+    image: require('../../images/tondapizza.jpeg')
+  },
+  {
+    id: 11,
+    itemname: "Pizza Tonda Romana",
+    content: "This is typical Italian Pizza Tonda Romana",
+    image: require('../../images/tondapizza.jpeg')
+  },
+  {
+    id: 12,
+    itemname: "Pizza Tonda Romana",
+    content: "This is typical Italian Pizza Tonda Romana",
+    image: require('../../images/tondapizza.jpeg')
+  },
+  {
+    id: 13,
+    itemname: "Pizza Tonda Romana",
+    content: "This is typical Italian Pizza Tonda Romana",
+    image: require('../../images/tondapizza.jpeg')
+  },
+  {
+    id: 14,
+    itemname: "Pizza Tonda Romana",
+    content: "This is typical Italian Pizza Tonda Romana",
+    image: require('../../images/tondapizza.jpeg')
+  },
 ];
 
 const japanese = [
@@ -51,7 +105,7 @@ const japanese = [
   {id: 6, itemname: "nattou", content: "delicious!", image: require('../../images/nattou.jpeg')},
   {
     id: 7,
-    itemname: "gbitter melon stir-fried with pork",
+    itemname: "bitter melon stir-fried with pork",
     content: "delicious!",
     image: require('../../images/chanpuru.jpeg')
   },
