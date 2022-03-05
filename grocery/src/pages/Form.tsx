@@ -107,10 +107,10 @@ function Form () {
     
 
     const disableSend =
-        name === '' || name.length < 8 || 
-        email === '' || 
+        name === '' || name.length < 8 ||
+        email === '' ||
         subject === ''  || subject.length < 10 ||
-        content === '' || content.length < 20 
+        content === '' || content.length < 15
 
     return(
         <div style={outline}>
@@ -132,6 +132,7 @@ function Form () {
                 <label>Email(メールアドレス)</label>
                 <input
                   type = "email"
+                  name = "emailForm"
                   placeholder = "Address(メールアドレス)"
                   style={nameform}
                   onChange={(e) => setEmail(e.target.value)}

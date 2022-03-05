@@ -1,11 +1,11 @@
 import React, {Fragment} from 'react';
 import { french } from '../assets/dishes/assets';
 
-const style: { [key: string]: string } = {
-    marginTop: "auto",
-    width: "100%",
-    backgroundColor: "black",
-};
+const character: { [key: string]: string } = {
+    color: "white",
+    textAlign: "left",
+    fontSize: "30px",
+}
 
 const rightchrt: { [key: string]: string } = {
     color: "white",
@@ -37,18 +37,20 @@ const right3:  {[key: string]: string} = {
     color: "white",
     fontSize: "18px",
 }
-console.log(french);
+
+const outline: { [key: string]: string } = {
+    margin: "38px 0 108px 78px"
+}
+
 
 class French extends React.Component {
     render() {
         return (
-            <div style={style}>
-              <div style={place}>
-                <h1 style={right1}>Test</h1>
-                <h2 style={right2}>xxxxxxxx</h2>
-                <h3 style={right3}>xxxxxxxxxx</h3>
-              </div>
+          <div style={outline}>
+            <div style={character}>
+              FrenchPage
             </div>
+          </div>
         );
     }
 }

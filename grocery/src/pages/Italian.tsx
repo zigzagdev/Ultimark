@@ -1,7 +1,7 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
-import {italian} from '../assets/dishes/assets'
+import { italian } from '../assets/dishes/assets'
 
 
 const Italian1:  {[key: string]: string} = {
@@ -81,7 +81,6 @@ const href: { [key: string]: string } = {
 
 function Italian () {
     return (
-      <Fragment>
         <div style={outline}>
           <div style={character}>Italian Page</div>
           <h1 style={mainobj}>Here are Italian dishes Page .</h1>
@@ -102,7 +101,6 @@ function Italian () {
             )}
           </div>
         </div>
-        </Fragment>
     )
 }
 export default Italian ;
