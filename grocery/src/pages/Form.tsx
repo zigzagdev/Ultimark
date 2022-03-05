@@ -161,10 +161,10 @@ function Form () {
                 />
               </div>
               <div style={btnoutline}>
-                <Button variant="contained" color="default" style={btn} onClick={handleChange} disabled={disableSend}>
+                <Button variant="contained" type="submit" color="default" style={btn} onClick={handleChange} disabled={disableSend}>
                   <strong>Submit(送信する)</strong>
                 </Button>
-                <Button variant="contained" color="default" style={btn}  onClick={handleCanceled}>
+                <Button variant="contained" color="default" type="submit" style={btn}  onClick={handleCanceled}>
                   <strong>Cancel(キャンセル)</strong>
                 </Button>
               </div>
