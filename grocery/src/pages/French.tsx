@@ -1,4 +1,5 @@
 import React, {Fragment} from 'react';
+import { french } from '../assets/dishes/assets';
 
 const style: { [key: string]: string } = {
     marginTop: "auto",
@@ -36,7 +37,7 @@ const right3:  {[key: string]: string} = {
     color: "white",
     fontSize: "18px",
 }
-
+console.log(french);
 
 class French extends React.Component {
     render() {

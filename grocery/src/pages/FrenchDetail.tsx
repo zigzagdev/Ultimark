@@ -3,6 +3,7 @@ import { french } from "../assets/dishes/assets"
 
 
 const frenchDetail = () => {
+    console.log(french)
     
     return(
         <div>
