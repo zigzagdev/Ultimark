@@ -89,6 +89,7 @@ const btn = {
 
 const Main = () => {
   return (
+    <Fragment>
       <h1 style={character}>About Us</h1>
       <div style={outline}>
         <i style={Italic}>
@@ -165,6 +166,7 @@ const Main = () => {
           </a>
         </div>
       </div>
+    </Fragment>
   );
 }
 
