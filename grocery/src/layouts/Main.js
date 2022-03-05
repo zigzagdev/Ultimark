@@ -129,17 +129,17 @@ const Main = () => {
         </div>
         <div style={card}>
          <a href="/French/2" style={word}>
-           <Button style={btn}>quiche lorraine</Button>
+           <Button style={btn}>Quiche Lorraine</Button>
          </a>
         </div>
         <div style={card}>
           <a href="/French/3" style={word}>
-            <Button style={btn}>croque-monsieur</Button>
+            <Button style={btn}>Croque-Monsieur</Button>
           </a>
         </div>
         <div style={card}>
           <a href="/French/4" style={word}>
-            <Button style={btn}>mille-feuille</Button>
+            <Button style={btn}>Mille-Feuille</Button>
           </a>
         </div>
       </div>

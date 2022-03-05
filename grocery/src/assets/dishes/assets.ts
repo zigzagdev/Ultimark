@@ -31,7 +31,7 @@ const french = [
   {id: 1, itemname: "macaron", content: "This is french snack.", image: "test.jpg"},
   {id: 2, itemname: "quiche lorraine", content: "This is french dish.", image: "aa.jpg"},
   {id: 3, itemname: "croque-monsieur", content: "This is french dish.", image: "bb.jpg"},
-  {id: 4, itemname: "mille-feuille", content: "This is french snack.", image: "aaa.jpg"},
+  {id: 4, itemname: "mille-feuille", content: "This is french snack.", image: require('../../images/Mille-Feuille.jpeg')},
   {id: 5, itemname: "la Clef", content: "This is french dish.", image: "iii.jpg"},
 ];
 
