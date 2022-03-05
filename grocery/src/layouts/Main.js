@@ -82,14 +82,13 @@ const word = {
 const btn = {
   color: "lightblue",
   width: "120px",
-  height: "40px",
+  height: "50px",
   backgroundColor: "black",
 }
 
 
 const Main = () => {
   return (
-    <Fragment>
       <h1 style={character}>About Us</h1>
       <div style={outline}>
         <i style={Italic}>
@@ -123,7 +122,9 @@ const Main = () => {
       <h1 style={introduce2}> Sample French Dish</h1>
       <div style={line2}>
         <div style={card}>
-          <a href="/French/1" style={word}>Macaron</a>
+          <a href="/French/1" style={word}>
+            <Button style={btn}>Macaron</Button>
+          </a>
         </div>
         <div style={card}>
          <a href="/French/2" style={word}>
@@ -131,28 +132,39 @@ const Main = () => {
          </a>
         </div>
         <div style={card}>
-          <a href="/French/3" style={word}>croque-monsieur</a>
+          <a href="/French/3" style={word}>
+            <Button style={btn}>croque-monsieur</Button>
+          </a>
         </div>
         <div style={card}>
-          <a href="/French/4" style={word}>mille-feuille</a>
+          <a href="/French/4" style={word}>
+            <Button style={btn}>mille-feuille</Button>
+          </a>
         </div>
       </div>
       <h1 style={introduce3}> Sample Italian Dish</h1>
       <div style={line3}>
         <div style={card}>
-          <a href="/Italian/1" style={word}>Seafood Spaghetti</a>
+          <a href="/Italian/1" style={word}>
+            <Button style={btn}>Seafood Spaghetti</Button>
+          </a>
         </div>
         <div style={card}>
-          <a href="/Italian/2" style={word}>Tomato Spaghetti</a>
+          <a href="/Italian/2" style={word}>
+            <Button style={btn}>Tomato Spaghetti</Button>
+          </a>
         </div>
         <div style={card}>
-          <a href="/Italian/3" style={word}>SquidInk Spaghetti</a>
+          <a href="/Italian/3" style={word}>
+            <Button style={btn}>SquidInk Spaghetti</Button>
+          </a>
         </div>
         <div style={card}>
-          <a href="/Italian/4" style={word}>Pizza Napoletana</a>
+          <a href="/Italian/4" style={word}>
+            <Button style={btn}>Pizza Napoletane</Button>
+          </a>
         </div>
       </div>
-    </Fragment>
   );
 }
 
