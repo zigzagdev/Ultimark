@@ -24,7 +24,7 @@ const japanese = [
     image: "test5.jpg",
   },
   {id: 6, itemname: "nattou", content: "delicious!", image: "test6.jpg"},
-  {id: 7, itemname: "goyachnpuru", content: "delicious!", image: "test7.jpg"},
+  {id: 7, itemname: "gbitter melon stir-fried with pork", content: "delicious!", image: "test7.jpg"},
 ];
 
 const french = [

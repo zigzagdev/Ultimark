@@ -4,6 +4,7 @@ import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 import Japanese from "./pages/Japanese";
 import JapaneseDetail from "./pages/JapaneseDetail";
 import French from "./pages/French";
+import FrenchDetail from "./pages/FrenchDetail"
 import Main from "./layouts/Main";
 import Italian from "./pages/Italian";
 import ItalianDetail from  "./pages/ItalianDetail"
@@ -21,7 +22,7 @@ function App() {
           <Route exact path="/Japanese" component={Japanese}/>
           <Route exact path="/Japanese/:id" component={JapaneseDetail}/>
           <Route exact path="/French" component={French}/>
-          {/*<Route exact path="/French/:id" component={FrenchDetail}/>*/}
+          <Route exact path="/French/:id" component={FrenchDetail}/>
           <Route exact path="/Italian" component={Italian}/>
           <Route exact path="/Italian/:id" component={ItalianDetail}/>
           <Route exact path="/Form" component={Form}/>
