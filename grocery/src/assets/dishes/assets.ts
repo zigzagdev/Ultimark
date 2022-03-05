@@ -7,15 +7,15 @@ const italian = [
 ];
 
 const japanese = [
-  {id: 1, itemname: "sushi", content: "test1", image: "test.jpg"},
+  {id: 1, itemname: "sushi", content: "test1", image: require('../../images/sushi.jpeg')},
   {id: 2, itemname: "takoyaki", content: "test2", image: "test2.jpg"},
   {id: 3, itemname: "gyoza", content: "delicious!", image: "test3.jpg"},
   {
     id: 4,
     itemname: "okonomiyaki",
     content:
-      "delicious!delicious!delicious!delicious!delicious!delicious!delicious!delicious!",
-    image: "test4.jpg",
+      "delicious!delicious!delicious!!",
+    image: require('../../images/okonomiyaki.jpeg'),
   },
   {
     id: 5,
@@ -30,7 +30,7 @@ const japanese = [
 const french = [
   {id: 1, itemname: "macaron", content: "This is french snack.", image: "test.jpg"},
   {id: 2, itemname: "quiche lorraine", content: "This is french dish.", image: "aa.jpg"},
-  {id: 3, itemname: "croque-monsieur", content: "This is french dish.", image: "bb.jpg"},
+  {id: 3, itemname: "croque-monsieur", content: "This is french dish.", image: require('../../images/croque monsieur.jpeg')},
   {id: 4, itemname: "mille-feuille", content: "This is french snack.", image: require('../../images/Mille-Feuille.jpeg')},
   {id: 5, itemname: "la Clef", content: "This is french dish.", image: "iii.jpg"},
 ];

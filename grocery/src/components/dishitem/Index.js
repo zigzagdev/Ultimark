@@ -9,7 +9,7 @@ const cardcomponent = {
 
 const card = {
   width: "16rem",
-  height: "302px",
+  height: "332px",
   backgroundColor: "white",
   tableLayout: "fixed",
   display: "flex",
@@ -18,7 +18,7 @@ const card = {
 
 const dishnameobj = {
   fontSize: "20px",
-  marginTop: "111px",
+  marginTop: "31px",
   color: "darkblue",
 };
 
@@ -49,6 +49,7 @@ function DishItem(props) {
   return (
     <div style={cardcomponent}>
       <Card style={card}>
+        <img src={props.dish.image} width={260} height={170} />
         <h1 style={dishnameobj}>{props.dish.itemname}</h1>
         <p style={contentobj}>{props.dish.content}</p>
         <Button style={btn}>
