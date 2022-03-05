@@ -5,7 +5,9 @@ import French from '../pages/French';
 import { japanese } from "../assets/dishes/assets";
 import Button from "@material-ui/core/Button";
 import millefeuille from "../images/Mille-Feuille.jpeg"
-
+import sushi from  "../images/sushi.jpeg"
+import okonomiyaki from "../images/okonomiyaki.jpeg"
+import croquemonsieur from "../images/croque monsieur.jpeg"
 
 
 
@@ -104,6 +106,7 @@ const Main = () => {
       <h1 style={introduce}> Sample Japanese Dish</h1>
       <div style={line1}>
         <div style={card}>
+          <img src={sushi} width={221} height={140}/>
           <a href="/Japanese/1" style={word}>
             <Button style={btn}>Sushi</Button>
           </a>
@@ -119,6 +122,7 @@ const Main = () => {
           </a>
         </div>
         <div style={card}>
+          <img src={okonomiyaki} width={221} height={140}/>
           <a href="/Japanese/4" style={word}>
             <Button style={btn}>Okonomiyaki</Button>
           </a>
@@ -137,6 +141,7 @@ const Main = () => {
          </a>
         </div>
         <div style={card}>
+          <img src={croquemonsieur} width={221} height={140}/>
           <a href="/French/3" style={word}>
             <Button style={btn}>Croque-Monsieur</Button>
           </a>
