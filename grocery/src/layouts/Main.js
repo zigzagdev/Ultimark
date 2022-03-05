@@ -4,6 +4,10 @@ import Japanese from '../pages/Japanese';
 import French from '../pages/French';
 import { japanese } from "../assets/dishes/assets";
 import Button from "@material-ui/core/Button";
+import millefeuille from "../images/Mille-Feuille.jpeg"
+
+
+
 
 const character = {
   color: 'aliceblue',
@@ -75,7 +79,7 @@ const word = {
   display: "block",
   fontSize: "20px",
   textDecoration: "none",
-  marginTop: "171px",
+  marginTop: "51px",
   color: "blue",
 }
 
@@ -138,6 +142,7 @@ const Main = () => {
           </a>
         </div>
         <div style={card}>
+          <img src={millefeuille} width={221} height={140}/>
           <a href="/French/4" style={word}>
             <Button style={btn}>Mille-Feuille</Button>
           </a>
