@@ -38,7 +38,7 @@ const cardboss: { [key: string]: string } = {
 
 const card: { [key: string]: string } = {
     width: "16rem",
-    height: '302px',
+    height: '332px',
     backgroundColor: 'white',
     tableLayout: 'fixed',
     display: 'flex',
@@ -52,7 +52,7 @@ const cardcomponent: { [key: string]: string } = {
 }
 const dishnameobj: { [key: string]: string } = {
     fontSize: '20px',
-    marginTop: '111px',
+    marginTop: '21px',
     color: 'darkblue',
 }
 
@@ -61,7 +61,7 @@ const contentobj: { [key: string]: string } = {
     wordBreak: 'break-all',
     overflowWrap: 'break-word',
     textAlign: 'left',
-    margin: '3px 13px 0 13px',
+    margin: '1px 7px 0 7px',
 }
 
 const btn: { [key: string]: string } = {
@@ -89,6 +89,7 @@ function Italian () {
                 return (
                   <div style={cardcomponent}>
                     <Card style={card}>
+                      <img src={food.image} width={260} height={170}/>
                       <h1 style={dishnameobj}>{food.itemname}</h1>
                       <p style={contentobj}>{food.content}</p>
                       <Button style={btn}>
