@@ -1,12 +1,12 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
 import {italian} from '../assets/dishes/assets'
 
 
-const Italian1:  {[key: string]: string} = {
+const Italian1: { [key: string]: string } = {
     color: "black",
-    fontSize:'25px',
+    fontSize: '25px',
 }
 const style: { [key: string]: string } = {
     marginTop: "43px",
@@ -37,22 +37,22 @@ const cardboss: { [key: string]: string } = {
 }
 
 const card: { [key: string]: string } = {
-width:"16rem",
-    height:'302px',
-    backgroundColor:'white',
-    tableLayout:'fixed',
+    width: "16rem",
+    height: '302px',
+    backgroundColor: 'white',
+    tableLayout: 'fixed',
     display: 'flex',
     flexDirection: 'column',
 }
 
 const cardcomponent: { [key: string]: string } = {
-margin:'32px 0 18px 62px',
+    margin: '32px 0 18px 62px',
     flexWrap: 'wrap',
 
 }
 const dishnameobj: { [key: string]: string } = {
-fontSize: '20px',
-    marginTop:'111px',
+    fontSize: '20px',
+    marginTop: '111px',
     color: 'darkblue',
 }
 
@@ -81,7 +81,6 @@ const href: { [key: string]: string } = {
 
 function Italian () {
     return (
-      <Fragment>
         <div style={outline}>
           <div style={character}>Italian Page</div>
           <h1 style={mainobj}>Here are Italian dishes Page .</h1>
@@ -102,7 +101,6 @@ function Italian () {
             )}
           </div>
         </div>
-        </Fragment>
     )
 }
 export default Italian ;

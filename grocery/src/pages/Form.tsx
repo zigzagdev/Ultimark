@@ -104,19 +104,20 @@ function Form () {
         setSubject('');
         setContent('');
     };
+    
+
     const disableSend =
-        name === '' || name.length < 8 || 
-        email === '' || 
+        name === '' || name.length < 8 ||
+        email === '' ||
         subject === ''  || subject.length < 10 ||
-        content === '' || content.length < 20 
+        content === '' || content.length < 15
 
     return(
-      <div style={outline}>
-        <h1 style={outword}>Contact Form(お問い合わせ)</h1>
-        <div>
-          <h2 style={formword}>Fullfill the form(以下、入力ください)</h2>
-          <form>
-            <div>
+        <div style={outline}>
+          <h1 style={outword}>Contact Form(お問い合わせ)</h1>
+          <div>
+            <h2 style={formword}>Fullfill the form(以下、入力ください)</h2>
+            <form>
               <div style={textform}>
                 <label htmlFor="nameForm">Your Name (氏名)</label>
                 <input
@@ -128,11 +129,10 @@ function Form () {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                 />
-                <label htmlFor="emailForm">Email(メールアドレス)</label>
+                <label>Email(メールアドレス)</label>
                 <input
                   type = "email"
-                  name = "email"
-                  id = "mailForm"
+                  name = "emailForm"
                   placeholder = "Address(メールアドレス)"
                   style={nameform}
                   onChange={(e) => setEmail(e.target.value)}
@@ -168,10 +168,9 @@ function Form () {
                   <strong>Cancel(キャンセル)</strong>
                 </Button>
               </div>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
-      </div>
     )
 }
 

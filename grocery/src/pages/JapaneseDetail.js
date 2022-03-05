@@ -20,7 +20,7 @@ function JapaneseDetail() {
   
   return (
     <div style={main}>
-      <h1 style={character}>{findById.name}</h1>
+      <h1 style={character}>{findById.itemname}</h1>
     </div>
   )
 }

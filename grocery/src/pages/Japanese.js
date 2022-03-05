@@ -1,12 +1,12 @@
-import React, { Fragment } from "react";
-import { japanese } from "../assets/dishes/assets";
-import { DishItem } from "../components/dishitem/Index";
+import React, {Fragment} from "react";
+import {japanese} from "../assets/dishes/assets";
+import {DishItem} from "../components/dishitem/Index";
 
 
 const character = {
   color: "white",
   textAlign: "left",
- 
+  
 };
 
 const outline = {
@@ -35,7 +35,7 @@ function Japanese() {
         </div>
         <div style={cardboss}>
           {japanese.map((dish, i) => (
-            <DishItem key={i} dish={dish} />
+            <DishItem key={i} dish={dish}/>
           ))}
         </div>
       </div>
