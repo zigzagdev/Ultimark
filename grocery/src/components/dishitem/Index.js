@@ -49,7 +49,7 @@ function DishItem(props) {
   return (
     <div style={cardcomponent}>
       <Card style={card}>
-        <h1 style={dishnameobj}>{props.dish.name}</h1>
+        <h1 style={dishnameobj}>{props.dish.itemname}</h1>
         <p style={contentobj}>{props.dish.content}</p>
         <Button style={btn}>
           <a href={`/Japanese/${props.dish.id}`} style={href}>Detail</a>

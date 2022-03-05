@@ -27,7 +27,7 @@ const cardboss: { [key: string]: string } = {
 
 const dishnameobj: { [key: string]: string } = {
   fontSize: '20px',
-  marginTop: '111px',
+  marginTop: '151px',
   color: 'darkblue',
 }
 
@@ -43,6 +43,14 @@ const card: { [key: string]: string } = {
 const cardcomponent: { [key: string]: string } = {
   margin: '32px 0 18px 62px',
   flexWrap: 'wrap',
+}
+
+const contentobj: { [key: string]: string } = {
+  fontSize: '17px',
+  wordBreak: 'break-all',
+  overflowWrap: 'break-word',
+  textAlign: 'left',
+  margin: '3px 13px 0 13px',
 }
 
 
@@ -61,6 +69,7 @@ function French()  {
                        <div style={cardboss}>
                          <Card style={card}>
                            <h1 style={dishnameobj}>{food.itemname}</h1>
+                           <p style={contentobj}>{food.content}</p>
                          </Card>
                        </div>
                      </div>
