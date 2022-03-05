@@ -123,18 +123,18 @@ const Main = () => {
       <h1 style={introduce2}> Sample French Dish</h1>
       <div style={line2}>
         <div style={card}>
-          <a href="/French/1" style={word}>Sushi</a>
+          <a href="/French/1" style={word}>Macaron</a>
         </div>
         <div style={card}>
          <a href="/French/2" style={word}>
-           <Button style={btn}>Macaron</Button>
+           <Button style={btn}>quiche lorraine</Button>
          </a>
         </div>
         <div style={card}>
-          <a href="/French/3" style={word}>Sushi</a>
+          <a href="/French/3" style={word}>croque-monsieur</a>
         </div>
         <div style={card}>
-          <a href="/French/4" style={word}>Sushi</a>
+          <a href="/French/4" style={word}>mille-feuille</a>
         </div>
       </div>
       <h1 style={introduce3}> Sample Italian Dish</h1>
