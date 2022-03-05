@@ -4,11 +4,18 @@ import Japanese from '../pages/Japanese';
 import French from '../pages/French';
 import { japanese } from "../assets/dishes/assets";
 import Button from "@material-ui/core/Button";
-import millefeuille from "../images/Mille-Feuille.jpeg"
-import sushi from  "../images/sushi.jpeg"
-import okonomiyaki from "../images/okonomiyaki.jpeg"
-import croquemonsieur from "../images/croque monsieur.jpeg"
-
+import millefeuille from "../images/Mille-Feuille.jpeg";
+import sushi from  "../images/sushi.jpeg";
+import okonomiyaki from "../images/okonomiyaki.jpeg";
+import croquemonsieur from "../images/croque monsieur.jpeg";
+import gyoza from "../images/gyoza.jpeg";
+import macaron from "../images/macaron.jpeg";
+import quichelorraine from "../images/quichelorraine.jpeg";
+import takoyaki from "../images/takoyaki.jpeg";
+import pizza from "../images/pizza.jpeg";
+import Squiid from "../images/SquidInk Spaghetti.jpeg";
+import Tomato from "../images/Tomato Spaghetti.jpeg";
+import Seafood from "../images/seafood.webp";
 
 
 const character = {
@@ -112,11 +119,13 @@ const Main = () => {
           </a>
         </div>
         <div style={card}>
+          <img src={takoyaki} width={221} height={140}/>
           <a href="/Japanese/2" style={word}>
             <Button style={btn}>Takoyaki</Button>
           </a>
         </div>
         <div style={card}>
+          <img src={gyoza} width={221} height={140}/>
           <a href="/Japanese/3" style={word}>
             <Button style={btn}>Gyoza</Button>
           </a>
@@ -131,11 +140,13 @@ const Main = () => {
       <h1 style={introduce2}> Sample French Dish</h1>
       <div style={line2}>
         <div style={card}>
+          <img src={macaron} width={221} height={140}/>
           <a href="/French/1" style={word}>
             <Button style={btn}>Macaron</Button>
           </a>
         </div>
         <div style={card}>
+          <img src={quichelorraine} width={221} height={140}/>
          <a href="/French/2" style={word}>
            <Button style={btn}>Quiche Lorraine</Button>
          </a>
@@ -156,21 +167,25 @@ const Main = () => {
       <h1 style={introduce3}> Sample Italian Dish</h1>
       <div style={line3}>
         <div style={card}>
+          <img src={Seafood} width={221} height={140}/>
           <a href="/Italian/1" style={word}>
             <Button style={btn}>Seafood Spaghetti</Button>
           </a>
         </div>
         <div style={card}>
+          <img src={Tomato} width={221} height={140}/>
           <a href="/Italian/2" style={word}>
             <Button style={btn}>Tomato Spaghetti</Button>
           </a>
         </div>
         <div style={card}>
+          <img src={Squiid} width={221} height={140}/>
           <a href="/Italian/3" style={word}>
             <Button style={btn}>SquidInk Spaghetti</Button>
           </a>
         </div>
         <div style={card}>
+          <img src={pizza} width={221} height={140}/>
           <a href="/Italian/4" style={word}>
             <Button style={btn}>Pizza Napoletane</Button>
           </a>
