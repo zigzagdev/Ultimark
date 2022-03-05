@@ -123,33 +123,33 @@ const Main = () => {
       <h1 style={introduce2}> Sample French Dish</h1>
       <div style={line2}>
         <div style={card}>
-          <a href="/French" style={word}>Sushi</a>
+          <a href="/French/1" style={word}>Sushi</a>
         </div>
         <div style={card}>
-         <a href="/French" style={word}>
+         <a href="/French/2" style={word}>
            <Button style={btn}>Macaron</Button>
          </a>
         </div>
         <div style={card}>
-          <a href="/French" style={word}>Sushi</a>
+          <a href="/French/3" style={word}>Sushi</a>
         </div>
         <div style={card}>
-          <a href="/French" style={word}>Sushi</a>
+          <a href="/French/4" style={word}>Sushi</a>
         </div>
       </div>
       <h1 style={introduce3}> Sample Italian Dish</h1>
       <div style={line3}>
         <div style={card}>
-          <a href="/Italian" style={word}>Seafood Spaghetti</a>
+          <a href="/Italian/1" style={word}>Seafood Spaghetti</a>
         </div>
         <div style={card}>
-          <a href="/Italian" style={word}>Tomato Spaghetti</a>
+          <a href="/Italian/2" style={word}>Tomato Spaghetti</a>
         </div>
         <div style={card}>
-          <a href="/Italian" style={word}>SquidInk Spaghetti</a>
+          <a href="/Italian/3" style={word}>SquidInk Spaghetti</a>
         </div>
         <div style={card}>
-          <a href="/Italian" style={word}>Pizza Napoletana</a>
+          <a href="/Italian/4" style={word}>Pizza Napoletana</a>
         </div>
       </div>
     </Fragment>
