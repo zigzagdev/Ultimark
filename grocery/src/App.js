@@ -12,6 +12,8 @@ import Footer from './layouts/Footer'
 import Form from './pages/Form'
 import './App.css'
 import Pagination from './layouts/pagination'
+import ContactForm from './pages/ContactForm'
+
 
 
 function App() {
@@ -28,6 +30,7 @@ function App() {
           <Route exact path="/Italian" component={Italian}/>
           <Route exact path="/Italian/:id" component={ItalianDetail}/>
           <Route exact path="/Form" component={Form}/>
+          <Route exact path="/ContactForm" component={ContactForm}/>
         </Switch>
       </BrowserRouter>
       {/*<Pagination/>*/}

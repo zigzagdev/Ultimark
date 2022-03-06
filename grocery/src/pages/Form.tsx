@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Footer from '../layouts/Footer'
-import Button from '@material-ui/core/Button';
+import {Button, TextField} from '@material-ui/core';
 import {init, send} from 'emailjs-com';
 
 
@@ -76,9 +76,9 @@ const btnoutline: { [key: string]: string } = {
 }
 
 const btn: { [key: string]: string } = {
-  margin: "0 50px 0",
-  borderColor: "pink",
+  margin: "0 50px 0"
 }
+
 
 function Form() {
   const [name, setName] = useState('');
@@ -105,8 +105,16 @@ function Form() {
     setContent('');
   };
 
+  const focusout = () => {
+    let regex = /^([A-Za-z0-9_\-\.])+@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+    if(!regex.test(email))
+    {
+      console.log(email)
+      alert('メールアドレスが正しくありません!');
+    }
+  }
 
-  const disableSend =
+  const disabled =
     name.length < 8 ||
     email === '' ||
     subject.length < 10 ||
@@ -121,21 +129,22 @@ function Form() {
           <div style={textform}>
             <label htmlFor="nameForm">Your Name (氏名)</label>
             <input
-              type="text"
-              id="nameForm"
-              className="formInput"
-              placeholder="Name(氏名)"
-              style={nameform}
-              value={name}
-              onChange={(e) => setName(e.target.value)}
+              type = "text"
+              id = "nameForm"
+              name = "name"
+              placeholder = "Name(氏名)"
+              style = {nameform}
+              onChange = {(e) => setName(e.target.value)}
             />
             <label>Email(メールアドレス)</label>
             <input
-              type="email"
-              name="emailForm"
-              placeholder="Address(メールアドレス)"
+              type = "email"
+              placeholder ="Address(メールアドレス)"
               style={nameform}
               onChange={(e) => setEmail(e.target.value)}
+              name="email"
+              onBlur={focusout}
+              id="emailForm"
               value={email}
             />
           </div>
@@ -162,8 +171,15 @@ function Form() {
             />
           </div>
           <div style={btnoutline}>
-            <Button variant="contained" type="submit" color="default" style={btn} onClick={handleChange}
-                    disabled={disableSend}>
+            <Button
+              type="submit"
+              variant="contained"
+              color="default"
+              style={btn}
+              onMouseOver={focusout}
+              onClick={handleChange}
+              disabled={disabled}
+              >
               <strong>Submit(送信する)</strong>
             </Button>
             <Button variant="contained" color="default" style={btn} onClick={handleCanceled}>
