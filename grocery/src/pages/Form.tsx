@@ -105,7 +105,6 @@ function Form() {
     setContent('');
   };
 
-
   const disableSend =
     name.length < 8 ||
     email === '' ||

@@ -2,7 +2,7 @@ import React from 'react';
 import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
 import {italian} from '../assets/dishes/assets'
-
+import pagination from '../layouts/pagination'
 
 
 const Italian1: { [key: string]: string } = {
@@ -97,7 +97,6 @@ function Italian () {
                         <a href={`/Italian/${food.id}`} style={href}>Detail</a>
                       </Button>
                     </Card>
-
                   </div>
                 )
               }
