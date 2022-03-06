@@ -4,6 +4,7 @@ import Card from '@material-ui/core/Card';
 import {italian} from '../assets/dishes/assets'
 
 
+
 const Italian1: { [key: string]: string } = {
     color: "black",
     fontSize: '25px',
@@ -96,6 +97,7 @@ function Italian () {
                         <a href={`/Italian/${food.id}`} style={href}>Detail</a>
                       </Button>
                     </Card>
+
                   </div>
                 )
               }
