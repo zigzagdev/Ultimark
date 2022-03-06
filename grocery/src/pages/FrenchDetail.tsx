@@ -23,7 +23,13 @@ const french1:  {[key: string]: string} = {
 
 const french2:  {[key: string]: string} = {
   color: "white",
-  marginTop: "31px",
+  margin: "31px 0 14px 21px",
+}
+
+const image:  {[key: string]: string} = {
+  width: "420px",
+  height: "310px",
+  margin: "30px 0 50px 110px"
 }
 
 const FrenchDetail = () => {
@@ -31,13 +37,12 @@ const FrenchDetail = () => {
   const { id } = useParams<RouterParams>();
   const intid = parseInt(id)
   const array = french.find((dish) => dish.id == intid);
-
-  console.log(array)
     
     return(
       <div style={outline}>
         <h1 style={french1}>{array?.itemname}</h1>
         <h2 style={french2}>{array?.content}</h2>
+        <img src={array?.image} style={image}/>
       </div>
     )
 }
