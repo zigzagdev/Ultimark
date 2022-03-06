@@ -30,7 +30,7 @@ function App() {
           <Route exact path="/Form" component={Form}/>
         </Switch>
       </BrowserRouter>
-      <Pagination/>
+      {/*<Pagination/>*/}
       <Footer/>
     </div>
   );
