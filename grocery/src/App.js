@@ -11,8 +11,6 @@ import ItalianDetail from  "./pages/ItalianDetail"
 import Footer from './layouts/Footer'
 import Form from './pages/Form'
 import './App.css'
-import Pagination from './layouts/pagination'
-
 
 
 function App() {
@@ -31,7 +29,6 @@ function App() {
           <Route exact path="/Form" component={Form}/>
         </Switch>
       </BrowserRouter>
-      {/*<Pagination/>*/}
       <Footer/>
     </div>
   );
