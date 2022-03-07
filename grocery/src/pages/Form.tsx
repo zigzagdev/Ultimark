@@ -143,7 +143,6 @@ function Form() {
               style={nameform}
               onChange={(e) => setEmail(e.target.value)}
               name="email"
-              onMouseOver={focusout}
               onBlur={focusout}
               id="emailForm"
               value={email}
@@ -177,6 +176,7 @@ function Form() {
               variant="contained"
               color="default"
               style={btn}
+              onBlur={focusout}
               onMouseOver={focusout}
               onClick={handleChange}
               disabled={disabled}
