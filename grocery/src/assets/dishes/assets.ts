@@ -134,5 +134,8 @@ const french = [
   {id: 5, itemname: "galette", content: "This is french dish.", image: require('../../images/galette.webp')},
 ];
 
+const spanish = [
+  {id:1, itemname: "paella", content: "spaniish dish", image:"test.jpg", price:"2100"}
+]
 
-export {japanese, italian, french};
+export {japanese, italian, french, spanish};
