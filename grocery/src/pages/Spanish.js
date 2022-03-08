@@ -6,18 +6,26 @@ const outline = {
   margin: "38px 0 148px 78px"
 }
 
-const  title = {
+const title = {
   color: "white",
   textAlign: "left",
   fontSize: "30px",
 }
 
-console.log(spanish)
+const  titledetail = {
+  fontSize: "27px",
+  color: "snow",
+  margin: "31px 0 0 66px",
+  textAlign: "left"
+}
+
 function Spanish () {
   return(
     <div style={outline}>
-      <h1 style={title}>Here are Spanish dishes Page .</h1>
-      
+      <div style={title}>
+        Spanish Page
+      </div>
+      <h1 style={titledetail}>Here are Spanish dishes Page .</h1>
     </div>
   )
 }
