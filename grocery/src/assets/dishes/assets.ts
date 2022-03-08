@@ -135,7 +135,19 @@ const french = [
 ];
 
 const spanish = [
-  {id:1, itemname: "paella", content: "spaniish dish", image:"test.jpg", price:"2100"}
+  {id:1, itemname: "Paella", content: "spaniish dish", image:"test.jpg", price:"2100"},
+  {id:2, itemname: "Tortilla", content: "spaniish dish", image:"test.jpg", price:"600"},
+  {id:3, itemname: "Jamón serrano", content: "spaniish dish", image:"test.jpg", price:"3100"},
+  {id:4, itemname: "Boquerones en vinagre", content: "spaniish dish", image:"test.jpg", price:"2200"},
+  {id:5, itemname: "Pimientos de padron", content: "spaniish dish", image:"test.jpg", price:"2190"},
+  {id:6, itemname: "Champiñones a la plancha", content: "spaniish dish", image:"test.jpg", price:"2600"},
+  {id:7, itemname: "Patatas bravas", content: "spaniish dish", image:"test.jpg", price:"4100"},
+  {id:8, itemname: "Gazpacho", content: "spaniish dish", image:"test.jpg", price:"2000"},
+  {id:9, itemname: "Calçots", content: "spaniish dish", image:"test.jpg", price:"1100"},
+  {id:10, itemname: "Sopa de ajo", content: "spaniish dish", image:"test.jpg", price:"200"},
+  {id:11, itemname: "Pinchos", content: "spaniish dish", image:"test.jpg", price:"400"},
+
+
 ]
 
 export {japanese, italian, french, spanish};

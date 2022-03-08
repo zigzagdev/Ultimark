@@ -1,5 +1,7 @@
 import React, {Fragment} from "react";
 import {spanish} from "../assets/dishes/assets";
+import Button from '@material-ui/core/Button';
+import Card from '@material-ui/core/Card';
 
 
 const outline = {
@@ -26,6 +28,7 @@ function Spanish () {
         Spanish Page
       </div>
       <h1 style={titledetail}>Here are Spanish dishes Page .</h1>
+      
     </div>
   )
 }
