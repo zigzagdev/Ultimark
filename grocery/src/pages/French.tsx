@@ -80,7 +80,6 @@ function French()  {
             <h1 style={mainobj}>Here are French dishes Page .</h1>
             <div style={cardboss}>
               {french.map(food => {
-                console.log(food)
                    return (
                      <div style={cardcomponent}>
                        <div style={cardboss}>

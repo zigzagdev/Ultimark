@@ -21,6 +21,42 @@ const  titledetail = {
   textAlign: "left"
 }
 
+const cardboss = {
+  display: 'flex',
+  flexWrap: 'wrap'
+}
+
+const card = {
+  width: "16rem",
+  height: '332px',
+  backgroundColor: 'white',
+  tableLayout: 'fixed',
+  display: 'flex',
+  flexDirection: 'column'
+}
+
+const  cardcomponent = {
+  margin: '32px 0 18px 62px',
+  flexWrap: 'wrap',
+}
+
+const sortby =
+  spanish.sort(function (a, b) {
+    if (a.price > b.price) return 1;
+    if (a.price < b.price) return -1;
+    return 0;
+  })
+;
+
+const dishobj = {
+  fontSize: '20px',
+  marginTop: '21px',
+  color: 'darkblue',
+}
+console.log(spanish)
+console.log(sortby)
+
+
 function Spanish () {
   return(
     <div style={outline}>
@@ -28,7 +64,19 @@ function Spanish () {
         Spanish Page
       </div>
       <h1 style={titledetail}>Here are Spanish dishes Page .</h1>
-      
+      <div style={cardboss}>
+        {sortby.map(food => {
+          return (
+            <div style={cardcomponent}>
+              <Card style={card}>
+                <img src={food.image} width={260} height={170}/>
+                <h1 style={dishobj}>{food.price}</h1>
+                </Card>
+              </div>
+            )
+          })
+        }
+      </div>
     </div>
   )
 }
