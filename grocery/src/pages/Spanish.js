@@ -2,6 +2,7 @@ import React, {Fragment} from "react";
 import {spanish} from "../assets/dishes/assets";
 import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
+import {limit} from '../components/common/commonfunction'
 
 
 const outline = {
@@ -45,17 +46,19 @@ const sortby =
     if (a.price > b.price) return 1;
     if (a.price < b.price) return -1;
     return 0;
-  })
-;
+  });
 
 const dishobj = {
   fontSize: '20px',
   marginTop: '21px',
   color: 'darkblue',
 }
-console.log(spanish)
-console.log(sortby)
 
+const dishnameobj = {
+  fontSize: '20px',
+  marginTop: '21px',
+  color: 'darkblue'
+}
 
 function Spanish () {
   return(
@@ -70,7 +73,8 @@ function Spanish () {
             <div style={cardcomponent}>
               <Card style={card}>
                 <img src={food.image} width={260} height={170}/>
-                <h1 style={dishobj}>{food.price}</h1>
+                <h1 style={dishnameobj}>{food.content}</h1>
+                <h3 style={dishobj}>{food.price}</h3>
                 </Card>
               </div>
             )

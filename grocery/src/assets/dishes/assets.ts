@@ -178,7 +178,13 @@ const spanish = [
     image: require('../../images/Patatas bravas.jpeg'),
     price: 4100
   },
-  {id: 8, itemname: "Gazpacho", content: "spaniish dish", image: require('../../images/Gazpacho.webp'), price: 2000},
+  {
+    id: 8,
+    itemname: "Gazpacho",
+    content: "spaniish dishspaniish dishspaniish dishspaniish dishspaniish dishspaniish dishspaniish dishspaniish dishspaniish dishspaniish dishspaniish dishspaniish dishspaniish dishspaniish dishspaniish dishspaniish dishspaniish dishspaniish dishspaniish dishspaniish dishspaniish dishspaniish dishspaniish dishspaniish dishspaniish dishspaniish dishspaniish dishspaniish dishspaniish dishspaniish dishspaniish dishspaniish dishspaniish dishspaniish dishspaniish dishspaniish dishspaniish dishspaniish dishspaniish dishspaniish dishspaniish dish",
+    image: require('../../images/Gazpacho.webp'),
+    price: 2000
+  },
   {id: 9, itemname: "Calçots", content: "spaniish dish", image: require('../../images/Calçots.jpeg'), price: 1100},
   {
     id: 10,
