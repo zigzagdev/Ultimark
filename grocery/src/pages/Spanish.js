@@ -73,7 +73,7 @@ function Spanish () {
             <div style={cardcomponent}>
               <Card style={card}>
                 <img src={food.image} width={260} height={170}/>
-                <h1 style={dishnameobj}>{food.content}</h1>
+                <h1 style={dishnameobj}>{limit}{food.content}</h1>
                 <h3 style={dishobj}>{food.price}</h3>
                 </Card>
               </div>
