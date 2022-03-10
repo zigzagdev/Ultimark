@@ -2,6 +2,8 @@ import React, {Fragment} from 'react';
 import {french} from '../assets/dishes/assets';
 import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
+import { limit } from "../components/common/commonfunction";
+
 
 const character: { [key: string]: string } = {
   color: "white",
@@ -86,7 +88,10 @@ function French()  {
                          <Card style={card}>
                            <img src={food.image} width={260} height={170} style={image}/>
                            <h1 style={dishnameobj}>{food.itemname}</h1>
-                           <p style={contentobj}>{food.content}</p>
+                           <p style={contentobj}>
+                             {limit}
+                             {food.content}
+                           </p>
                            <Button style={btn}>
                              <a href={`/French/${food.id}`} style={href}>Detail</a>
                            </Button>
