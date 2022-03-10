@@ -65,7 +65,7 @@ const contentobj: { [key: string]: string } = {
     display: "block",
     textOverflow: "ellipsis",
     whiteSpace: "nowrap",
-    overflow: "hidden",
+    overflow: "hidden"
 }
 
 const btn: { [key: string]: string } = {
@@ -83,32 +83,36 @@ const href: { [key: string]: string } = {
 };
 
 
-function Italian () {
+function Italian() {
     return (
-        <div style={outline}>
+      <div style={outline}>
           <div style={character}>Italian Page</div>
           <h1 style={mainobj}>Here are Italian dishes Page .</h1>
-            <div style={cardboss}>
-              {italian.map(food => {
-                return (
-                  <div style={cardcomponent}>
-                    <Card style={card}>
-                      <img src={food.image} width={260} height={170}/>
-                      <h1 style={dishnameobj}>{food.itemname}</h1>
-                      <p style={contentobj}>
-                        {limit}
-                        {food.content}
-                      </p>
-                      <Button style={btn}>
-                        <a href={`/Italian/${food.id}`} style={href}>Detail</a>
-                      </Button>
-                    </Card>
-                  </div>
-                )}
+          <div style={cardboss}>
+              {italian.map((food) => {
+                    return (
+                      <div style={cardcomponent}>
+                          <div style={cardboss}>
+                              <Card style={card}>
+                                  <img src={food.image} width={260} height={170}/>
+                                  <h1 style={dishnameobj}>{food.itemname}</h1>
+                                  <p style={contentobj}>
+                                      {limit}
+                                      {food.content}
+                                  </p>
+                                  <Button style={btn}>
+                                      <a href={`/Italian/${food.id}`} style={href}>Detail</a>
+                                  </Button>
+                              </Card>
+                          </div>
+                      </div>
+                    )
+                }
               )
-            }
+              }
           </div>
-        </div>
+      </div>
     )
 }
-export default Italian ;
+
+export default Italian;

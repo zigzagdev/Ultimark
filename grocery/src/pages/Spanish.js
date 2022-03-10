@@ -59,7 +59,7 @@ const dishnameobj = {
   display: "block",
   textOverflow: "ellipsis",
   whiteSpace: "nowrap",
-  overflow: "hidden",
+  overflow: "hidden"
 };
 
 function Spanish() {

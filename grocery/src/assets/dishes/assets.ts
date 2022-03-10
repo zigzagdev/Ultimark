@@ -2,7 +2,7 @@ const italian = [
   {
     id: 1,
     itemname: "Seafood Spaghetti",
-    content: "This is typical Italian Seafood Spaghetti!!",
+    content: "This is typical Italian Seafood Spaghetti!! ",
     image: require('../../images/seafood.webp')
   },
   {
@@ -122,7 +122,7 @@ const french = [
   {
     id: 3,
     itemname: "croque-monsieur",
-    content: "This is french dish.",
+    content: "This is french dish. Often to eat in lunch.",
     image: require('../../images/croque monsieur.jpeg')
   },
   {

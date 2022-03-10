@@ -48,11 +48,14 @@ const cardcomponent: { [key: string]: string } = {
 }
 
 const contentobj: { [key: string]: string } = {
-  fontSize: '17px',
-  wordBreak: 'break-all',
-  overflowWrap: 'break-word',
-  textAlign: 'left',
-  margin: '1px 7px 0 7px',
+  fontSize: "20px",
+  color: "darkblue",
+  margin: "auto",
+  maxWidth: "200px",
+  display: "block",
+  textOverflow: "ellipsis",
+  whiteSpace: "nowrap",
+  overflow: "hidden",
 }
 
 const btn: { [key: string]: string } = {
