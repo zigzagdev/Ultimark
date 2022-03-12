@@ -81,7 +81,7 @@ const line3 = {
   display: "flex",
   flexDirection: "row",
   flexWrap: "wrap",
-  margin: "51px 0 110px 0",
+  margin: "51px 0 20px 0",
 }
 
 const word = {
@@ -97,6 +97,13 @@ const btn = {
   width: "120px",
   height: "50px",
   backgroundColor: "black",
+}
+
+const line4 = {
+  display: "flex",
+  flexDirection: "row",
+  flexWrap: "wrap",
+  margin: "51px 0 100px 0",
 }
 
 
@@ -191,7 +198,34 @@ const Main = () => {
           </a>
         </div>
       </div>
-    </Fragment>
+      <h1 style={introduce2}> Sample Italian Dish</h1>
+      <div style={line4}>
+        <div style={card}>
+          <img src={Seafood} width={221} height={140}/>
+          <a href="/Italian/1" style={word}>
+            <Button style={btn}>Seafood Spaghetti</Button>
+          </a>
+        </div>
+      <div style={card}>
+        <img src={Tomato} width={221} height={140}/>
+          <a href="/Italian/2" style={word}>
+            <Button style={btn}>Tomato Spaghetti</Button>
+          </a>
+      </div>
+      <div style={card}>
+        <img src={Squiid} width={221} height={140}/>
+        <a href="/Italian/3" style={word}>
+          <Button style={btn}>SquidInk Spaghetti</Button>
+        </a>
+      </div>
+      <div style={card}>
+        <img src={pizza} width={221} height={140}/>
+        <a href="/Italian/4" style={word}>
+          <Button style={btn}>Pizza Napoletane</Button>
+        </a>
+      </div>
+    </div>
+  </Fragment>
   );
 }
 

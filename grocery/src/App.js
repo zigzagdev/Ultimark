@@ -12,6 +12,7 @@ import Footer from './layouts/Footer'
 import Form from './pages/Form'
 import './App.css'
 import Spanish from './pages/Spanish'
+import SpanishDetail from './pages/SpanishDetail'
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           <Route exact path="/Italian" component={Italian}/>
           <Route exact path="/Italian/:id" component={ItalianDetail}/>
           <Route exact path="/Spanish" component={Spanish}/>
+          <Route exact path="/Spanish/:id" component={SpanishDetail}/>
           <Route exact path="/Form" component={Form}/>
         </Switch>
       </BrowserRouter>

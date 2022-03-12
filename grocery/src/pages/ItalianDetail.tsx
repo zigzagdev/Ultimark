@@ -37,7 +37,6 @@ const ItalianDetail = ()  => {
     const {id} = useParams<RouterParams>();
     const intid = parseInt(id)
     const array = italian.find((dish) => dish.id == intid);
-console.log(array)
     return (
       <div style={outline}>
         <h1 style={Italian1}>{array?.itemname}</h1>
