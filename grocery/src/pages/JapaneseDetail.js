@@ -14,10 +14,7 @@ const  main = {
 
 function JapaneseDetail() {
   const {id} = useParams();
-  
   const findById = japanese.find((dish) => dish.id === Number(id));
-  console.log(findById);
-  
   return (
     <div style={main}>
       <h1 style={character}>{findById.itemname}</h1>
@@ -26,4 +23,3 @@ function JapaneseDetail() {
 }
 
 export default JapaneseDetail;
-

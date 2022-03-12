@@ -89,8 +89,16 @@ function French()  {
                      <div style={cardcomponent}>
                        <div style={cardboss}>
                          <Card style={card}>
-                           <img src={food.image} width={260} height={170} style={image}/>
-                           <h1 style={dishnameobj}>{food.itemname}</h1>
+                           <img
+                             src={food.image}
+                             alt={food.image}
+                             width={260}
+                             height={170}
+                             style={image}
+                           />
+                           <h1 style={dishnameobj}>
+                             {food.itemname}
+                           </h1>
                            <p style={contentobj}>
                              {limit}
                              {food.content}
