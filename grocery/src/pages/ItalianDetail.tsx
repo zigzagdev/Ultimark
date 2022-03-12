@@ -39,9 +39,13 @@ const ItalianDetail = ()  => {
     const array = italian.find((dish) => dish.id == intid);
     return (
       <div style={outline}>
-        <h1 style={Italian1}>{array?.itemname}</h1>
-        <h2 style={Italian2}>{array?.content}</h2>
-        <img src={array?.image} style={image}/>
+        <h1 style={Italian1}>{ array?.itemname }</h1>
+        <h2 style={Italian2}>{ array?.content }</h2>
+        <img
+          src={array?.image}
+          alt={array?.image}
+          style={image}
+        />
       </div>
     )
 }

@@ -4,7 +4,7 @@ import Card from "@material-ui/core/Card";
 import { limit } from "../components/common/commonfunction";
 
 const outline = {
-  margin: "38px 0 148px 78px",
+  margin: "38px 0 108px 78px",
 };
 
 const title = {

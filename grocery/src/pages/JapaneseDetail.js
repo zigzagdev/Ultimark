@@ -13,7 +13,7 @@ const  main = {
 }
 
 function JapaneseDetail() {
-  const {id} = useParams();
+  const { id } = useParams();
   const findById = japanese.find((dish) => dish.id === Number(id));
   return (
     <div style={main}>

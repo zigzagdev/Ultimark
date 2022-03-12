@@ -74,11 +74,6 @@ class Footer extends React.Component {
               Contact Form
             </a>
           </h2>
-          <h2 style={right2}>
-            <a href="/ContactForm" style={right2}>
-              Contact Form(JavaScript)
-            </a>
-          </h2>
         </div>
       </div>
     );
