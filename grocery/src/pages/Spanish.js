@@ -1,6 +1,7 @@
 import React from "react";
 import { spanish } from "../assets/dishes/assets";
 import Card from "@material-ui/core/Card";
+import Button from　"@material-ui/core/Button";
 import { limit } from "../components/common/commonfunction";
 
 const outline = {
@@ -62,6 +63,20 @@ const dishnameobj = {
   overflow: "hidden"
 };
 
+const btn = {
+  marginTop: "auto",
+  marginBottom: "13px",
+  backgroundColor: "lightgray",
+  textAlign: "center",
+  width: "140px",
+  marginLeft: "57px"
+}
+
+const href = {
+  textDecoration: "none",
+  color: "black"
+}
+
 function Spanish() {
   return (
     <div style={outline}>
@@ -82,7 +97,9 @@ function Spanish() {
                   {limit}
                   {food.content}
                 </h1>
-                <h3 style={dishobj}>{food.price}</h3>
+                <Button style={btn}>
+                  <a href={`/Spanish/${food.id}`} style={href}>Detail</a>
+                </Button>
               </Card>
             </div>
           );

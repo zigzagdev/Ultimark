@@ -49,6 +49,4 @@ const ItalianDetail = ()  => {
       </div>
     )
 }
-
-
 export default ItalianDetail;
