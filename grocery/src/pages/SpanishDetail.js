@@ -4,30 +4,32 @@ import { spanish } from '../assets/dishes/assets'
 
 const character = {
   color: "white",
-  textAlign: "left"
+  textAlign: "left",
+  margin: "40px 0 10px 0",
 };
 
-const character2  = {
-  margin: "62px 0 0 21px",
+const character2 = {
+  color: "white",
   textAlign: "left",
-  color: "snow"
 };
 
-const character3  = {
-  margin: "22px 0 0 31px",
-  textAlign: "left",
-  color: "snow"
-};
+
+const split = {
+  display: 'flex',
+}
 
 const  main = {
-  margin: "30px 0 0 180px"
+  margin: "30px 0 70px 210px"
 };
 
 const imagestyle = {
   width: "420px",
-  height: "310px",
-  margin: "30px 0 50px 0",
-  textAlign: "left"
+  height: "auto",
+  margin: "72px 70px 60px 50px",
+}
+
+const namecontent = {
+  margin: "20px 0 0 210px",
 }
 
 const SpanishDetail  = () => {
@@ -36,16 +38,18 @@ const SpanishDetail  = () => {
   return(
     <Fragment>
       <div style={main}>
-        <h1 style={character}>{findById.itemname}</h1>
-        <h2 style={character3}><strong>Price is </strong>${findById.price}</h2>
-        <h3 style={character2}>{findById.content}</h3>
-      </div>
-      <div>
-        <img
-          src={findById.image}
-          alt={findById.image}
-          style={imagestyle}
-        />
+        <div style={split}>
+          <img
+            src={findById.image}
+            alt={findById.image}
+            style={imagestyle}
+          />
+          <div style={namecontent}>
+            <h1 style={character}>{findById.itemname}</h1>
+            <h2 style={character2}><strong>Price is </strong>¥{findById.price}</h2>
+            <h3 style={character2}>{findById.content}</h3>
+          </div>
+        </div>
       </div>
     </Fragment>
   )
