@@ -13,6 +13,12 @@ const character2  = {
   color: "snow"
 };
 
+const character3  = {
+  margin: "22px 0 0 31px",
+  textAlign: "left",
+  color: "snow"
+};
+
 const  main = {
   margin: "30px 0 0 180px"
 };
@@ -31,7 +37,8 @@ const SpanishDetail  = () => {
     <Fragment>
       <div style={main}>
         <h1 style={character}>{findById.itemname}</h1>
-        <h2 style={character2}>{findById.content}</h2>
+        <h2 style={character3}><strong>Price is </strong>${findById.price}</h2>
+        <h3 style={character2}>{findById.content}</h3>
       </div>
       <div>
         <img

@@ -21,7 +21,7 @@ const  main = {
 const imagestyle = {
   width: "420px",
   height: "310px",
-  margin: "30px 0 50px 60px"
+  margin: "10px 0 50px 30px"
 }
 
 

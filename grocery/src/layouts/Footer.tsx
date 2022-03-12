@@ -47,7 +47,7 @@ const li1:  {[key: string]: string} = {
 }
 
 const margin:  {[key: string]: string} = {
-    paddingTop: "14px",
+    paddingTop: "7px",
 
 }
 
@@ -57,10 +57,11 @@ class Footer extends React.Component {
     return (
       <div style={style}>
         <div style={place}>
-          <h1 style={right1}>Home</h1>
+          <h1 style={right1}>Index</h1>
           <h2 style={margin}><a href="/Italian" style={right1}>Italian</a></h2>
           <h3 style={margin}><a href="/French" style={li1}>French</a></h3>
           <h4 style={margin}><a href="/Japanese" style={li1}>Japanese</a></h4>
+          <h4 style={margin}><a href="/Spanish" style={li1}>Spanish</a></h4>
         </div>
         <div style={place}>
           <h1 style={right1}>SNS</h1>
