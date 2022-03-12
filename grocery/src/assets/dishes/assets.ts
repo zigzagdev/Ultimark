@@ -2,7 +2,7 @@ const italian = [
   {
     id: 1,
     itemname: "Seafood Spaghetti",
-    content: "This is typical Italian Seafood Spaghetti!!",
+    content: "This is typical Italian Seafood Spaghetti!! ",
     image: require('../../images/seafood.webp')
   },
   {
@@ -122,7 +122,7 @@ const french = [
   {
     id: 3,
     itemname: "croque-monsieur",
-    content: "This is french dish.",
+    content: "This is french dish. Often to eat in lunch.",
     image: require('../../images/croque monsieur.jpeg')
   },
   {
@@ -134,5 +134,66 @@ const french = [
   {id: 5, itemname: "galette", content: "This is french dish.", image: require('../../images/galette.webp')},
 ];
 
+const spanish = [
+  {id: 1, itemname: "Paella", content: "spanish dish", image: require('../../images/Paella.jpeg'), price: 2100},
+  {
+    id: 2,
+    itemname: "Tortilla",
+    content: "spanish dish",
+    image: require('../../images/tortilla española.jpeg'),
+    price: 600
+  },
+  {
+    id: 3,
+    itemname: "Jamón serrano",
+    content: "spanish dish",
+    image: require('../../images/iberikkko.jpeg'),
+    price: 3100
+  },
+  {
+    id: 4,
+    itemname: "Boquerones en vinagre",
+    content: "spanish dish",
+    image: require('../../images/Boquerones en vinagre.jpeg'),
+    price: 2200
+  },
+  {
+    id: 5,
+    itemname: "Pimientos de padron",
+    content: "spanish dish",
+    image: require('../../images/Pimientos de padron.jpeg'),
+    price: 2190
+  },
+  {
+    id: 6,
+    itemname: "Champiñones a la plancha",
+    content: "spanish dish",
+    image: require('../../images/Champiñones a la plancha.webp'),
+    price: 2600
+  },
+  {
+    id: 7,
+    itemname: "Patatas bravas",
+    content: "spanish dish",
+    image: require('../../images/Patatas bravas.jpeg'),
+    price: 4100
+  },
+  {
+    id: 8,
+    itemname: "Gazpacho",
+    content: "spanish dishspanish dishspanish dishspanish dishspanish dishspanish dishspanish dishspanish dishspanish dishspanish dishspanish dishspanish dishspanish dishspanish dishspanish dishspanish dishspanish dishspanish dishspanish ",
+    image: require('../../images/Gazpacho.webp'),
+    price: 2000
+  },
+  {id: 9, itemname: "Calçots", content: "spanish dish", image: require('../../images/Calçots.jpeg'), price: 1100},
+  {
+    id: 10,
+    itemname: "Sopa de ajo",
+    content: "spanish dish",
+    image: require('../../images/Sopa de ajo.jpeg'),
+    price: 200
+  },
+  {id: 11, itemname: "Pinchos", content: "spanish dish", image: require('../../images/Pinchos.jpeg'), price: 400}
+]
 
-export {japanese, italian, french};
+export {japanese, italian, french, spanish};

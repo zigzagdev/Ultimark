@@ -15,7 +15,11 @@ import takoyaki from "../images/takoyaki.jpeg";
 import pizza from "../images/pizza.jpeg";
 import Squiid from "../images/SquidInk Spaghetti.jpeg";
 import Tomato from "../images/Tomato Spaghetti.jpeg";
+import Palla from "../images/Paella.jpeg";
+import Gazpacho from "../images/Gazpacho.webp";
 import Seafood from "../images/seafood.webp";
+import Jamón from "../images/iberikkko.jpeg";
+import Boquerones from "../images/Boquerones en vinagre.jpeg";
 
 
 const character = {
@@ -81,7 +85,7 @@ const line3 = {
   display: "flex",
   flexDirection: "row",
   flexWrap: "wrap",
-  margin: "51px 0 110px 0",
+  margin: "51px 0 20px 0",
 }
 
 const word = {
@@ -93,10 +97,17 @@ const word = {
 }
 
 const btn = {
-  color: "lightblue",
+  color: "snow",
   width: "120px",
   height: "50px",
   backgroundColor: "black",
+}
+
+const line4 = {
+  display: "flex",
+  flexDirection: "row",
+  flexWrap: "wrap",
+  margin: "51px 0 100px 0",
 }
 
 
@@ -191,8 +202,34 @@ const Main = () => {
           </a>
         </div>
       </div>
-    </Fragment>
+      <h1 style={introduce2}> Sample Spanish Dish</h1>
+      <div style={line4}>
+        <div style={card}>
+          <img src={Gazpacho} width={221} height={140}/>
+          <a href="/Spanish/8" style={word}>
+            <Button style={btn}>Gazpacho</Button>
+          </a>
+        </div>
+      <div style={card}>
+        <img src={Palla} width={221} height={140}/>
+          <a href="/Spanish/1" style={word}>
+            <Button style={btn}>Paella</Button>
+          </a>
+      </div>
+      <div style={card}>
+        <img src={Jamón} width={221} height={140}/>
+        <a href="/Spanish/3" style={word}>
+          <Button style={btn}>Jamón serrano</Button>
+        </a>
+      </div>
+      <div style={card}>
+        <img src={Boquerones} width={221} height={140}/>
+        <a href="/Spanish/4" style={word}>
+          <Button style={btn}>Boquerones en vinagre</Button>
+        </a>
+      </div>
+    </div>
+  </Fragment>
   );
 }
-
-export default Main ;
+export default Main;

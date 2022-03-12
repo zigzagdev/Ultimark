@@ -1,6 +1,6 @@
-import React, {Fragment} from "react";
-import {japanese} from "../assets/dishes/assets";
-import {DishItem} from "../components/dishitem/Index";
+import React from "react";
+import { japanese } from "../assets/dishes/assets";
+import { DishItem } from "../components/dishitem/Index";
 
 
 const character = {
@@ -27,7 +27,6 @@ const cardboss = {
 
 function Japanese() {
   return (
-    <Fragment>
       <div style={outline}>
         <h1 style={character}>Japanese food page</h1>
         <div>
@@ -39,7 +38,6 @@ function Japanese() {
           ))}
         </div>
       </div>
-    </Fragment>
   );
 }
 

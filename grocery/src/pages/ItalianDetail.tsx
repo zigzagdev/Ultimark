@@ -37,15 +37,16 @@ const ItalianDetail = ()  => {
     const {id} = useParams<RouterParams>();
     const intid = parseInt(id)
     const array = italian.find((dish) => dish.id == intid);
-console.log(array)
     return (
       <div style={outline}>
-        <h1 style={Italian1}>{array?.itemname}</h1>
-        <h2 style={Italian2}>{array?.content}</h2>
-        <img src={array?.image} style={image}/>
+        <h1 style={Italian1}>{ array?.itemname }</h1>
+        <h2 style={Italian2}>{ array?.content }</h2>
+        <img
+          src={array?.image}
+          alt={array?.image}
+          style={image}
+        />
       </div>
     )
 }
-
-
 export default ItalianDetail;

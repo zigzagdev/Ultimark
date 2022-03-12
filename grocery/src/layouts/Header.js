@@ -10,7 +10,7 @@ const fontsize = {
 
 const fragment = {
   display: "float",
-  marginTop: "30px",
+  margin: "40px 0 31px 0",
 };
 
 const home = {
@@ -22,11 +22,13 @@ const home = {
 };
 
 export default function Header() {
-  return (
-    <Fragment>
+    return (
       <div style={fragment}>
         <a href="/" style={home}>
           Home
+        </a>
+        <a href="/Spanish" style={fontsize}>
+          Spanish
         </a>
         <a href="/Italian" style={fontsize}>
           Italian
@@ -38,6 +40,5 @@ export default function Header() {
           Japanese
         </a>
       </div>
-    </Fragment>
   );
 }

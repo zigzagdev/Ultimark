@@ -2,6 +2,8 @@ import React, {Fragment} from 'react';
 import {french} from '../assets/dishes/assets';
 import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
+import { limit } from "../components/common/commonfunction";
+
 
 const character: { [key: string]: string } = {
   color: "white",
@@ -46,11 +48,14 @@ const cardcomponent: { [key: string]: string } = {
 }
 
 const contentobj: { [key: string]: string } = {
-  fontSize: '17px',
-  wordBreak: 'break-all',
-  overflowWrap: 'break-word',
-  textAlign: 'left',
-  margin: '1px 7px 0 7px',
+  fontSize: "20px",
+  color: "darkblue",
+  margin: "auto",
+  maxWidth: "200px",
+  display: "block",
+  textOverflow: "ellipsis",
+  whiteSpace: "nowrap",
+  overflow: "hidden",
 }
 
 const btn: { [key: string]: string } = {
@@ -80,14 +85,24 @@ function French()  {
             <h1 style={mainobj}>Here are French dishes Page .</h1>
             <div style={cardboss}>
               {french.map(food => {
-                console.log(food)
                    return (
                      <div style={cardcomponent}>
                        <div style={cardboss}>
                          <Card style={card}>
-                           <img src={food.image} width={260} height={170} style={image}/>
-                           <h1 style={dishnameobj}>{food.itemname}</h1>
-                           <p style={contentobj}>{food.content}</p>
+                           <img
+                             src={food.image}
+                             alt={food.image}
+                             width={260}
+                             height={170}
+                             style={image}
+                           />
+                           <h1 style={dishnameobj}>
+                             {food.itemname}
+                           </h1>
+                           <p style={contentobj}>
+                             {limit}
+                             {food.content}
+                           </p>
                            <Button style={btn}>
                              <a href={`/French/${food.id}`} style={href}>Detail</a>
                            </Button>
