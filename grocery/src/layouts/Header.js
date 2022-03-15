@@ -10,7 +10,7 @@ const fontsize = {
 
 const fragment = {
   display: "float",
-  margin: "40px 0 31px 0",
+  margin: "50px 0 31px 0",
 };
 
 const home = {

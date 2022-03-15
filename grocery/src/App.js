@@ -32,7 +32,7 @@ function App() {
           <Route exact path="/Spanish" component={Spanish}/>
           <Route exact path="/Spanish/:id" component={SpanishDetail}/>
           <Route exact path="/Form" component={Form}/>
-          <Route exact path="/Questions" component={FrequentlyQuestions}/>
+          <Route exact path="/Questions" component={Questions}/>
         </Switch>
       </BrowserRouter>
       <Footer/>
