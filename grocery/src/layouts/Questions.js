@@ -17,17 +17,16 @@ const card = {
   height: "342px",
   backgroundColor: "white",
   tableLayout: "fixed",
-  margin: "10px 10px 10px 10px",
-  flexWrap: "wrap",
+  margin: "29px 10px 29px 10px",
   flexDirection: 'column',
 }
 
 const cardstyle = {
-  margin: "29px 8px 19px 8px"
+  margin: "29px 8px 34px 8px"
 }
 
 const strong = {
-  fontSize:"12px"
+  fontSize:"22px"
 }
 
 const after = {
@@ -40,9 +39,12 @@ const after = {
   flexDirection: 'column',
 }
 
-
+const content = {
+  margin: "40px 8px 0 8px"
+}
 
 function Questions () {
+  
   return(
     <div style={outline}>
       <div style={middleline}>
@@ -51,6 +53,20 @@ function Questions () {
             <strong style={strong}>
               How can we find the meal which we want to order?
             </strong>
+            <p style={content}>
+              Click the SearchHeader and  input some words what you want to know .
+            </p>
+            
+          </div>
+        </Card>
+        <Card style={card}>
+          <div style={cardstyle}>
+            <strong style={strong}>
+              What types of foods can find here ?
+            </strong>
+            <i>
+            
+            </i>
           </div>
         </Card>
         <Card style={card}>
@@ -58,13 +74,9 @@ function Questions () {
             <strong style={strong}>
               How can we find the meal which we want to order?
             </strong>
-          </div>
-        </Card>
-        <Card style={card}>
-          <div style={cardstyle}>
-            <strong style={strong}>
-              How can we find the meal which we want to order?
-            </strong>
+            <i style={content}>
+            
+            </i>
           </div>
         </Card>
         <Card style={card}>
