@@ -75,6 +75,12 @@ class Footer extends React.Component {
               Contact Form
             </a>
           </h2>
+          <h3 style={right2}>
+            Donations
+          </h3>
+          <h4 style={right2}>
+            Frequently Asked questions
+          </h4>
         </div>
       </div>
     );

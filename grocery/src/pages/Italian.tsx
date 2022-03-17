@@ -92,7 +92,6 @@ function Italian() {
               {italian.map((food) => {
                     return (
                       <div style={cardcomponent}>
-                          <div style={cardboss}>
                               <Card style={card}>
                                   <img
                                     src={food.image}
@@ -111,7 +110,6 @@ function Italian() {
                                       <a href={`/Italian/${food.id}`} style={href}>Detail</a>
                                   </Button>
                               </Card>
-                          </div>
                       </div>
                     )
                 })};
