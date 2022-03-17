@@ -14,6 +14,7 @@ import './App.css'
 import Spanish from './pages/Spanish'
 import SpanishDetail from './pages/SpanishDetail'
 import Questions from './layouts/Questions'
+import Toast from './components/common/toast'
 
 
 function App() {
