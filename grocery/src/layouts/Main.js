@@ -30,7 +30,7 @@ const character = {
 
 const outline = {
   textAlign: 'center',
-  margin: '26px 0 19px 0',
+  margin: '46px 0 49px 0',
 }
 
 const Italic = {
@@ -114,11 +114,11 @@ const line4 = {
 const Main = () => {
   return (
     <Fragment>
-      <h1 style={character}>About Us</h1>
       <div style={outline}>
         <i style={Italic}>
           At here, we serve the typical World Food list.<br/>
-          In general, we display some type of dishes, so if you can't find what you want, I'm so sorry for it .
+          In general, we display some type of dishes.<br/>
+          so if you can't find what you want even if you search it, I'm so sorry for it .
         </i>
       </div>
       <h1 style={introduce}> Sample Japanese Dish</h1>

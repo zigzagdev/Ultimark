@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
-import {italian} from '../assets/dishes/assets'
+import { italian } from '../assets/dishes/assets'
 import { limit } from "../components/common/commonfunction";
 
 
