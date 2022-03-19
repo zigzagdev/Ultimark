@@ -89,7 +89,7 @@ function Questions () {
           </div>
         </Card>
         <Card style={after}>
-         Not write here anything.
+          Not write here anything.
         </Card>
       </div>
     </div>
