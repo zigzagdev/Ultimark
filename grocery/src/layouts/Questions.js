@@ -84,7 +84,7 @@ function Questions () {
               Can we order this food at here ?
             </strong>
             <p style={content}>
-            
+              Sorry can't order here. Maybe later.....
             </p>
           </div>
         </Card>
