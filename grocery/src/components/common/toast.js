@@ -7,15 +7,17 @@ const gareth = {
   color: "darkblue"
 }
 
-function toastapp() {
+function Toast () {
   const notify = () => {
-    toast('fuck you')
+    toast('very delicious !')
   }
   return (
     <div>
-    <button onClick={notify}>Detail</button>
-    <ToastContainer/>
+      <button onFocus={notify}>
+        Detail
+      </button>
+      <ToastContainer/>
     </div>
   );
 }
-export default toastapp;
+export default Toast;
