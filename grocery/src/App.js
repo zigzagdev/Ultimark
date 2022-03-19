@@ -15,6 +15,7 @@ import Spanish from './pages/Spanish'
 import SpanishDetail from './pages/SpanishDetail'
 import Questions from './layouts/Questions'
 import Toast from './components/common/toast'
+import Search from './layouts/Search'
 
 
 function App() {
@@ -34,7 +35,7 @@ function App() {
           <Route exact path="/Spanish/:id" component={SpanishDetail}/>
           <Route exact path="/Form" component={Form}/>
           <Route exact path="/Questions" component={Questions}/>
-          {/*<Route exact path="/Search" component={Search}/>*/}
+          <Route exact path="/Search" component={Search}/>
         </Switch>
       </BrowserRouter>
       <Footer/>
