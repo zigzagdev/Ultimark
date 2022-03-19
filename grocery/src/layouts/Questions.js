@@ -81,19 +81,15 @@ function Questions () {
         <Card style={card}>
           <div style={cardstyle}>
             <strong style={strong}>
-            How can we find the meal which we want to order?
-          </strong>
-        </div>
-      </Card>
-        <Card style={card}>
-          <div style={cardstyle}>
-            <strong style={strong}>
-              How can we find the meal which we want to order?
+              Can we order this food at here ?
             </strong>
+            <p style={content}>
+            
+            </p>
           </div>
         </Card>
         <Card style={after}>
-        
+         Not write here anything.
         </Card>
       </div>
     </div>
