@@ -6,7 +6,7 @@ const input = {
   width:"500px",
   height: "35px",
   backgroundColor: "snow",
-  marginTop: "46px",
+  margin: "46px 30px 0 0",
 }
 
 const outline = {
@@ -15,9 +15,17 @@ const outline = {
 
 const search = {
   color: "white",
-  textAlign: "left",
+  textAlign: "center",
   fontSize: "30px",
+  marginRight: "50px",
 }
+
+const example = {
+   margin: "60px 50px 0 0",
+   color: "white",
+  fontSize: "40px",
+}
+
 
 function Search () {
   const [query, setQuery] = useState("");
@@ -28,12 +36,13 @@ function Search () {
   )
   return(
     <div style={outline}>
-      <h1 style={search}>Search</h1>
+      <h1 style={search}>Search Item here ...</h1>
       <input
         placeholder="Input some words"
         type="text"
         style={input}
       />
+      <p style={example}>f.e japanese</p>
     </div>
   )
 }
