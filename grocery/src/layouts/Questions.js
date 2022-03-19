@@ -91,6 +91,9 @@ function Questions () {
         <Card style={after}>
           Not write here anything.
         </Card>
+        <Card style={after}>
+          Not write here anything.
+        </Card>
       </div>
     </div>
   )

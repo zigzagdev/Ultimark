@@ -79,7 +79,9 @@ class Footer extends React.Component {
             Donations
           </h3>
           <h4 style={right2}>
-            Frequently Asked questions
+            <a href="/Questions" style={right2}>
+              Frequently Asked questions
+            </a>
           </h4>
         </div>
       </div>
