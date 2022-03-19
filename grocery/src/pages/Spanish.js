@@ -3,6 +3,7 @@ import { spanish } from "../assets/dishes/assets";
 import Card from "@material-ui/core/Card";
 import Button from　"@material-ui/core/Button";
 import { limit } from "../components/common/commonfunction";
+import Toast  from '../components/common/toast'
 
 const outline = {
   margin: "38px 0 108px 78px",

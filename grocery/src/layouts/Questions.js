@@ -56,7 +56,6 @@ function Questions () {
             <p style={content}>
               Click the SearchHeader and  input some words what you want to know .
             </p>
-            
           </div>
         </Card>
         <Card style={card}>
@@ -64,9 +63,9 @@ function Questions () {
             <strong style={strong}>
               What types of foods can find here ?
             </strong>
-            <i>
-            
-            </i>
+            <p style={content}>
+              For example, Italian, French, Japanese and Spanish food can find here .
+            </p>
           </div>
         </Card>
         <Card style={card}>
@@ -75,26 +74,22 @@ function Questions () {
               How can we find the meal which we want to order?
             </strong>
             <i style={content}>
-            
+              To use the Search form if u don't mind .
             </i>
           </div>
         </Card>
         <Card style={card}>
           <div style={cardstyle}>
             <strong style={strong}>
-            How can we find the meal which we want to order?
-          </strong>
-        </div>
-      </Card>
-        <Card style={card}>
-          <div style={cardstyle}>
-            <strong style={strong}>
-              How can we find the meal which we want to order?
+              Can we order this food at here ?
             </strong>
+            <p style={content}>
+              Sorry can't order here. Maybe later.....
+            </p>
           </div>
         </Card>
         <Card style={after}>
-        
+         Not write here anything.
         </Card>
       </div>
     </div>

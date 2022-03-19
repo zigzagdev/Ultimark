@@ -3,6 +3,7 @@ import Spanish from  '../../pages/Spanish'
 import Italian from  '../../pages/Italian'
 
 
+
 const MAX_LENGTH = 20
 let str = ''
 

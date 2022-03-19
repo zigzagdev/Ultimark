@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { japanese } from "../assets/dishes/assets";
 import React, { Fragment } from 'react'
+import { ToastContainer, toast } from 'react-toastify';
 
 
 const character = {
