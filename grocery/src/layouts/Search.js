@@ -21,9 +21,9 @@ const search = {
 }
 
 const example = {
-   margin: "60px 50px 0 0",
+   margin: "40px 50px 0 0",
    color: "white",
-  fontSize: "40px",
+  fontSize: "25px",
 }
 
 
