@@ -35,7 +35,6 @@ function App() {
           <Route exact path="/Spanish/:id" component={SpanishDetail}/>
           <Route exact path="/Form" component={Form}/>
           <Route exact path="/Questions" component={Questions}/>
-          <Route exact path="/Search" component={Search}/>
         </Switch>
       </BrowserRouter>
       <Footer/>

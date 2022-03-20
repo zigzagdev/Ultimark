@@ -1,5 +1,6 @@
-import react from  'react'
+import react from 'react'
 import Card from "@material-ui/core/Card";
+
 
 const outline = {
   margin: "58px 87px 71px 87px",
@@ -26,7 +27,7 @@ const cardstyle = {
 }
 
 const strong = {
-  fontSize:"22px"
+  fontSize: "22px"
 }
 
 const after = {
@@ -43,9 +44,9 @@ const content = {
   margin: "40px 8px 0 8px"
 }
 
-function Questions () {
+function Questions() {
   
-  return(
+  return (
     <div style={outline}>
       <div style={middleline}>
         <Card style={card}>
@@ -54,7 +55,7 @@ function Questions () {
               How can we find the meal which we want to order?
             </strong>
             <p style={content}>
-              Click the SearchHeader and  input some words what you want to know .
+              Click the SearchHeader and input some words what you want to know .
             </p>
           </div>
         </Card>

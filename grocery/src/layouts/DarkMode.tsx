@@ -39,7 +39,7 @@ const DarkMode = () => {
                 <input type="checkbox" id="checkbox" onChange={toggleTheme} defaultChecked={defaultDark}/>
                 <div className="slider round"></div>
               </label>
-              <span>🌒</span>
+            <span>🌒</span>
           </div>
   );
 };
