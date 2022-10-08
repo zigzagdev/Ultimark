@@ -109,13 +109,14 @@ function Form() {
     let regex = /^([A-Za-z0-9_\-\.])+@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
     if(!regex.test(email))
     {
+      console.log(email)
       alert('メールアドレスが正しくありません!');
     }
   }
 
   const disabled =
     name.length < 8 ||
-    email == '' ||
+    email === '' ||
     subject.length < 10 ||
     content.length < 15
 
